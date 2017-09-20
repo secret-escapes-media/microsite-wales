@@ -1,0 +1,75 @@
+// general styles for the project that wouldn't be a reuseable component
+
+
+body {
+  background-color: $w-grey-dark;
+  color: $grey-lightest;
+}
+
+.bg {
+  &--grey { background-color: $w-grey; }
+}
+
+.comp-promo {
+  position: relative;
+  @include background-attributes;
+  background-color: $grey-darker;
+  background-image: url('../img/content/comp-promo.jpg');
+  background-position: 20% center;
+  @include bp(xl){ background-position: 35% center; }
+  &__bg {
+    $gradient-width: 400px;
+    $panel-width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #828492;
+    mix-blend-mode: multiply;
+    @include bp(xl){
+      left: auto;
+      width: $panel-width;
+      background-color: #96929e;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -$gradient-width;
+        bottom: 0;
+        display: block;
+        width: $gradient-width;
+        background-image: url('../img/grad.png');
+        background-position: 0;
+        background-repeat: repeat-y;
+        background-blend-mode: multiply;
+      }
+    }
+  }
+  &__wrap {
+    $gradient-width: 250px;
+    $panel-width: 50%;
+    position: relative;
+    margin-left: auto;
+    padding: $s12 $s4;
+    color: white;
+    @include bp(xl){
+      width: $panel-width;
+    }
+  }
+  &__text {
+    max-width: $lg;
+  }
+}
+
+.dummy-comp {
+  width: 580px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  > img {
+    width: 100%;
+    height: auto;
+  }
+}

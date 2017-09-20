@@ -1,0 +1,35 @@
+---
+layout: standard
+---
+
+<div class="section">
+  <div class="row row--padding row--xl text--center">
+    <div class="line-length--lg">
+      <p class="text--xl">{{page.intro}}</p>
+    </div>
+  </div>
+</div>
+
+{% assign page-sections = page.sections %}
+{% for section in page-sections %}
+<div class="section{% cycle ' bg--grey', '' %}">
+  <div class="row row--padding">
+    <div class="section">
+      <div class="row text--center">
+        <h3 class="title title--lg title--italic">{{section.title}}</h3>
+        <p class="text--lg line-length--lg">{{section.description}}</p>
+      </div>
+      <div class="row row--6-6-gutters">
+        {% for poi in section.pois %}
+        <div class="col">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{{poi.id}}.jpg');"></div>
+          <div class="space--md"></div>
+          <h4 class="title--xxs title--display title--bold title--upper title--kerning">{{poi.title}}</h4>
+          <p class="text--small">{{poi.description}}</p>
+        </div>
+        {% endfor %} <!-- end poi -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %} <!-- end section -->

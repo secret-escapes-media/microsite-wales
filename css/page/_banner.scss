@@ -1,0 +1,24 @@
+// the title banner that appears at the top of every page. sometimes animated bgs
+
+.banner {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  color: white;
+  &__content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background;
+    background-color: $grey-dark;
+    @include background-attributes;
+  }
+}

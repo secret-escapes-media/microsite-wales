@@ -1,0 +1,65 @@
+// Title & headline styles
+
+.title {
+  &--01 {
+    font-family: $font-family-headline-01;
+    line-height: 1.1;
+  }
+  &--02 {
+    font-family: $font-family-headline-02;
+    line-height: 1.25;
+  }
+  &--banner {
+    font-family: $font-family-headline-01;
+    font-weight: 900;
+    font-style: italic;
+    line-height: .9;
+  }
+  &--core {
+    font-family: $font-family;
+    line-height: 1.25;
+  }
+
+  & + *         { padding-top: .75em; }
+  &--sub        { padding-top: 0 !important; }
+  &--super + *  { padding-top: 0 !important; }
+  &--light      { font-weight: 300; }
+  &--bold       { font-weight: 500; }
+  &--bolder     { font-weight: 700; }
+  &--kerning    { letter-spacing: .25em; }
+  &--kerning-lg { letter-spacing: .5em; }
+  &--tight      { line-height: .9; }
+  &--tighter    { line-height: .8; }
+  &--capital    { text-transform: capitalize; }
+  &--upper      { text-transform: uppercase; }
+  &--italic     { font-style: italic; }
+
+  &--banner-size  { font-size: $s11; }
+  &--xxxxxl       { font-size: $s9; }
+  &--xxxxl        { font-size: $s8; }
+  &--xxxl         { font-size: $s7; }
+  &--xxl          { font-size: $s6; }
+  &--xl           { font-size: $s5; }
+  &--lg           { font-size: $s4; }
+  &--md           { font-size: $s3; }
+  &--sm           { font-size: $s2; }
+  &--xs           { font-size: $s1; }
+  &--xxs          { font-size: $s0; }
+  &--xxxs         { font-size: $s-1; }
+
+  @include bp(lg){
+    &--banner-size  { font-size: $s13; }
+    &--xxxxxl       { font-size: $s11; }
+    &--xxxxl        { font-size: $s10; }
+    &--xxxl         { font-size: $s9; }
+    &--xxl          { font-size: $s8; }
+    &--xl           { font-size: $s7; }
+    &--lg           { font-size: $s6; }
+    &--md           { font-size: $s5; }
+    &--sm           { font-size: $s4; }
+    &--xs           { font-size: $s3; }
+    &--xxs          { font-size: $s2; }
+    &--xxxs         { font-size: $s1; }
+  }
+
+}

@@ -1,0 +1,46 @@
+// general typographic elements like paragraphs, lists, etc
+
+.text {
+  &--xxl    { font-size: $s3; }
+  &--xl     { font-size: $s2; }
+  &--lg     { font-size: $s1; }
+  &--sm     { font-size: $s-1; font-weight: 400; }
+  &--left   { text-align: left; }
+  &--right  { text-align: right; }
+  &--center { text-align: center; }
+  &--white  { color: $white; }
+  &--black  { color: $text; }
+  &--dark   { color: $text-dark; }
+}
+
+.line-length {
+  display: inline-block;  max-width: 40rem;
+  &--lg { display: inline-block;  max-width: 47rem; }
+}
+
+
+// -------- general element styles --------
+
+.page__content {
+  * + p,
+  * + ul,
+  * + ol               { padding-top: $s1; }
+  li                   { list-style-position: outside; margin-left: $s2; }
+  li + li              { padding-top: $s-2; }
+  ul li                { list-style-type: disc; }
+  ol li                { list-style-type: decimal; }
+  em                   { font-style: italic; font-weight: 400; }
+  strong               { font-weight: 700; }
+  a[href]:not([class]) {
+    color: $orange;
+    @include transition;
+    &:hover { color: $orange-darker; }
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: $grey-lightest;
+  margin: $s1 0;
+}
