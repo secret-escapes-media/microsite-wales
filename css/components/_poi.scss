@@ -1,75 +1,71 @@
 // points of interest on the destination pages and featured across the site
 
 
-.pois {
-  text-align: center;
-}
 .poi {
-  max-width: $sm;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: $s4;
-  @include bp(lg){
-    display: inline-block;
-    width: 50%;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    vertical-align: top;
-  }
-  @include bp(xxl){
-    width: 33.33%;
+  &__image {}
+  &__content {}
+  &__location {
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    padding-top: 1em;
+    margin-top: 1em;
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: $white;
+    display: block;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1.5em;
+      width: 1.05em;
+      margin-top: -0.1em;
+      margin-right: .5em;
+      margin-bottom: .2em;
+      vertical-align: middle;
+      background-image: url( "../img/icons/map-pin.png" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+      .svg & { background-image: url( "../img/icons/map-pin.svg" ); }
+    }
   }
 }
 
 .featured-poi {
-  text-align: center;
-  margin-bottom: $s2;
-  // GRID SHIZZ
   @include layout(12 1/2);
-  @include bp(md){
-    @include gallery(6);
-    margin-bottom: gutter(12);
-    &:nth-child(odd):last-child{
-      margin-right: auto;
-      margin-left: auto;
-      float: none !important;
-    }
-  } // END GRID SHIZZ
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: $white;
-    background-color: rgba($grey-darkest,.5);
-    @include transition;
-    .title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: $z-content;
-      padding-top: 22.25%;
-      padding-left: $s2;
-      padding-right: $s2;
-      @include transition;
-      .csstransforms.csstransforms3d & {
-        top: 50%;
-        padding-top: 0;
-        transform: translateY(-50%);
-      }
-    }
-    &:hover {
-      .title { letter-spacing: 0.175em; }
-      background-color: rgba($grey-darkest,.66);
-    }
+  text-align: center;
+  &__image {
+    max-width: $lg;
+    margin-left: auto;
+    margin-right: auto;
   }
-  &--overview {
-    font-size: .75em;
-    .title {
-      padding-left: .5em;
-      padding-right: .5em;
+  &__text { padding-top: $s2; }
+  & + & { margin-top: $s2; }
+  @include bp(xxl){
+    text-align: left;
+    & + & { margin-top: $s4; }
+    &__text {}
+    .flexbox & {
+      display: flex;
+      align-items: center;
+    }
+    &__image { @include span(6); }
+    &__text {
+      @include span(6 last);
+      padding-top: 0;
+    }
+    &:nth-child(odd){
+      .featured-poi__image { @include span(6 last); }
+      .featured-poi__text { @include span(6); }
+      .flexbox & {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
     }
   }
 }

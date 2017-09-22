@@ -2,34 +2,69 @@
 layout: standard
 ---
 
-<div class="section">
-  <div class="row row--padding row--xl text--center">
-    <div class="line-length--lg">
-      <p class="text--xl">{{page.intro}}</p>
+<div class="intro{% if page.sections %} has-nav{% endif %}">
+
+  <div class="intro__content section row row--padding text--center">
+    <p class="text--xl">{{page.intro}}</p>
+  </div>
+
+  {% if page.sections %}
+  <div class="intro__nav text--center site-nav">
+    <div class="row">
+      <ul class="site-nav__list">
+        {% for section in page.sections %}
+        <li class="site-nav__item"><a href="#section-{{ section.title | slugify }}" class="site-nav__link">{{ section.title }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
+  {% endif %}
+
 </div>
+
+
 
 {% assign page-sections = page.sections %}
 {% for section in page-sections %}
-<div class="section{% cycle ' bg--grey', '' %}">
-  <div class="row row--padding">
-    <div class="section">
-      <div class="row text--center">
-        <h3 class="title title--lg title--italic">{{section.title}}</h3>
-        <p class="text--lg line-length--lg">{{section.description}}</p>
-      </div>
-      <div class="row row--6-6-gutters">
-        {% for poi in section.pois %}
-        <div class="col">
-          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{{poi.id}}.jpg');"></div>
-          <div class="space--md"></div>
-          <h4 class="title--xxs title--display title--bold title--upper title--kerning">{{poi.title}}</h4>
-          <p class="text--small">{{poi.description}}</p>
-        </div>
-        {% endfor %} <!-- end poi -->
-      </div>
-    </div>
+<div class="section{% cycle ' bg--grey', '' %}" id="section-{{section.title | slugify}}">
+
+  <div class="row row--padding text--center">
+    <h3 class="title title--xl title--italic title--bold">{{section.title}}</h3>
+    <p class="text--lg line-length--lg">{{section.description}}</p>
+    <div class="space--lg"></div>
   </div>
+
+
+
+  {% assign featured-pois = section.featured-pois %}
+  {% if featured-pois %}
+    {% for poi in featured-pois %}
+      {% include components/poi-feature.html %}
+    {% endfor %}
+  {% endif %} <!-- end featured poi -->
+
+
+  {% assign pois = section.pois %}
+  {% if pois %}
+    {% if pois.size < 3 %}
+      <div class="row row--padding row--6-6-gutters pois">
+    {% else %}
+      <div class="row row--padding row--4-4-4-gutters pois">
+    {% endif %}
+
+      {% for poi in pois %}
+      {% unless poi.featured %}
+        {% include components/poi.html %}
+      {% endunless %}
+      {% endfor %} <!-- end poi -->
+    </div>
+  {% endif %}
+
+
+
 </div>
 {% endfor %} <!-- end section -->
+
+
+
+{{content}}

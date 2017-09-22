@@ -3,36 +3,41 @@ layout: standard
 id: overview
 title: Overview
 nav-order: 1
+
+
+
 banner:
   title: Wales
   title-sub: But not as you know it
 
+
+
+intro: Wales is the stuff of legends. Craggy peaks and ominous forecasts, ruined castles clinging to vast summits, tales of lovestruck princesses, of dragons and wizards – Wales is a landscape of drama, irresistible romance, and superlative escapes. Discover foodie treats, tear down mountains on a mountainbike, or discover a wild coastline of ravishing beauty. Meet the people of Wales that make all of this possible, the everyday heroes that ensure each traveller leaves dreaming of returning to this unforgettable land. Start your Wales wanderlust here.
+
+
+
 topics:
 
-  - title: Lorem ipsum dolor sit amet
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ad quos tempore illum impedit quas quis, voluptatibus, quisquam rerum veniam odio incidunt sit reiciendis, voluptatum, eum obcaecati tenetur. Quidem dolorem doloremque praesentium dolore repellendus deleniti ut culpa, illum, blanditiis architecto. Quia vero cum itaque. Quibusdam, aperiam temporibus! Ab repellat autem est deleniti perspiciatis maxime animi, esse. Ipsa unde deleniti esse debitis expedita tempore itaque error. Accusamus, fuga perferendis voluptatem facilis repellendus minima est autem nostrum. Incidunt assumenda modi, sed rem.
-    link: '#link'
+  - title: Tall Tales
+    description: From King Arthur to Under Milk Wood, Wales is teeming with whispers of stoic knights and tight-knit valley communities. A rugged landscape that has inspired fantasies and dramas, romances and epics, and a literary heritage that stretches back to the time of Llewelyn the Great, all culminate in a contemporary Wales that is alive with a fiercely enigmatic cultural landscape.
+    link: 'legends'
     link-text: Discover More
 
-  - title: Lorem ipsum dolor sit amet
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ad quos tempore illum impedit quas quis, voluptatibus, quisquam rerum veniam odio incidunt sit reiciendis, voluptatum, eum obcaecati tenetur. Quidem dolorem doloremque praesentium dolore repellendus deleniti ut culpa, illum, blanditiis architecto. Quia vero cum itaque. Quibusdam, aperiam temporibus! Ab repellat autem est deleniti perspiciatis maxime animi, esse. Ipsa unde deleniti esse debitis expedita tempore itaque error. Accusamus, fuga perferendis voluptatem facilis repellendus minima est autem nostrum. Incidunt assumenda modi, sed rem.
-    link: '#link'
+  - title: Epic Experiences
+    description: From the Black Mountains to the wilds of Snowdonia, Wales offers nothing short of breathtaking landscapes. Intrepid adventurers will delight in hurtling down crags on mountain bikes, diving off sheer cliffs into bitterly cold ocean, climbing steep slopes for stunning panorama, or ziplining across sublime Welsh valleys. Your adrenaline rush starts here.
+    link: 'a-new-perspective'
     link-text: Discover More
 
-  - title: Lorem ipsum dolor sit amet
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ad quos tempore illum impedit quas quis, voluptatibus, quisquam rerum veniam odio incidunt sit reiciendis, voluptatum, eum obcaecati tenetur. Quidem dolorem doloremque praesentium dolore repellendus deleniti ut culpa, illum, blanditiis architecto. Quia vero cum itaque. Quibusdam, aperiam temporibus! Ab repellat autem est deleniti perspiciatis maxime animi, esse. Ipsa unde deleniti esse debitis expedita tempore itaque error. Accusamus, fuga perferendis voluptatem facilis repellendus minima est autem nostrum. Incidunt assumenda modi, sed rem.
-    link: '#link'
+  - title: A Welsh Craft
+    description: Schoolboys crafting superlative chocolate, renowned chefs reinventing the possibilities of the Welsh larder, a Brad and a Gaz making renowned craft beer – the Welsh sure know how to push the boundaries of fine fare. It’s long made Wales a world-class foodie destination – discover your own delectable delicacies here.
+    link: 'a-new-perspective'
     link-text: Discover More
 
 ---
 
-<div class="section bg--light-grey">
+<div class="section">
   <div class="row row--padding row--xl text--center">
-    <p class="title title--02 title--sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nisi veniam ad accusantium, sed molestiae.</p>
-    <div class="space--sm"></div>
-    <div class="line-length--lg ">
-      <p class="text--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptates, nobis fuga voluptatibus cumque, perspiciatis, similique doloremque possimus quae id eum libero repellendus accusantium placeat. Accusamus, rem eius non voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem atque, quibusdam. Magni, sed odio! Quia hic inventore enim sed nesciunt omnis dicta placeat, autem esse mollitia id accusantium illo, minima distinctio reiciendis iste expedita, molestias facere rerum alias. Vitae praesentium minima nemo quam neque, dolor doloribus adipisci, eum nam eaque?</p>
-    </div>
+    <p class="text--lg">{{page.intro}}</p>
   </div>
 </div>
 
@@ -41,14 +46,17 @@ topics:
     {% assign page-topics = page.topics %}
     {% for topic in page-topics %}
       <div class="bob">
+
         <div class="bob__image">
-          <a href="{{site.baseurl}}/{{topic.link}}"><div class="bg-img bg-img--1-1" style="background-image: url('{{site.baseurl}}/img/content/overview/{% cycle '01', '02', '03' %}.jpg');"></div></a>
+          <a href="{{site.baseurl}}/{{topic.link}}"><div class="bg-img bg-img--4-3 bg-img--rounded" style="background-image: url('{{site.baseurl}}/img/content/overview/{% cycle '01', '02', '03' %}.jpg');"></div></a>
         </div>
+
         <div class="bob__text">
           <div class="title title--01 title--lg title--italic title--bolder">{{topic.title}}</div>
           <p class="text--lg">{{topic.description}}</p>
           <a href="{{site.baseurl}}/{{topic.link}}" class="btn btn--red">{{topic.link-text}}</a>
         </div>
+
       </div>
     {% endfor %}
   </div>

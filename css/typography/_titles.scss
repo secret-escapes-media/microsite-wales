@@ -19,15 +19,24 @@
     font-family: $font-family;
     line-height: 1.25;
   }
+  &--highlight {
+    display: inline;
+    position: relative;
+    padding: 0 0.2em;
+    background-color: $w-grey-darker;
+    color: $w-purple;
+    .page--legends & { color: $w-purple; }
+    .page--a-new-perspective & { color: $w-green; }
+  }
 
-  & + *         { padding-top: .75em; }
+  & + *         { padding-top: .5em; }
   &--sub        { padding-top: 0 !important; }
   &--super + *  { padding-top: 0 !important; }
   &--light      { font-weight: 300; }
-  &--bold       { font-weight: 500; }
+  &--bold       { font-weight: 600; }
   &--bolder     { font-weight: 700; }
-  &--kerning    { letter-spacing: .25em; }
-  &--kerning-lg { letter-spacing: .5em; }
+  &--kerning    { letter-spacing: .15em; }
+  &--kerning-lg { letter-spacing: .3em; }
   &--tight      { line-height: .9; }
   &--tighter    { line-height: .8; }
   &--capital    { text-transform: capitalize; }

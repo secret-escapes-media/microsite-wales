@@ -10,6 +10,8 @@
   &__content {
     display: table-cell;
     vertical-align: middle;
+    z-index: $z-content-upper;
+    position: relative;
   }
   &__bg {
     position: absolute;
@@ -20,5 +22,16 @@
     z-index: $z-background;
     background-color: $grey-dark;
     @include background-attributes;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    background-color: rgba($grey-darkest,0.5);
+    .page--legends & { background-color: rgba($w-purple,0.5); }
+    .page--a-new-perspective & { background-color: rgba($w-green,0.5); }
   }
 }

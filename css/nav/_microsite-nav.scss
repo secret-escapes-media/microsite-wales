@@ -60,12 +60,14 @@ $nav-width-bp:        850px;
   }
   &__item {
     display: inline-block;
-    border-left: 1px solid $grey-dark;
+    border-left: 1px solid rgba($white,0.1);
     white-space: nowrap;
     @include transition;
-    &:last-of-type { border-right: 1px solid $grey-dark; }
+    &:last-of-type { border-right: 1px solid rgba($white,0.1); }
     &.is-current {
-      color: #ea152d;
+      color: $w-red;
+      .page--legends & { color: $w-purple; }
+      .page--a-new-perspective & { color: $w-green; }
       &:hover { color: $white; }
     }
     &:hover {

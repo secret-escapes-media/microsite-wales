@@ -1,0 +1,23 @@
+<div class="row row--padding featured-poi">
+
+  <div class="col featured-poi__image bg-img bg-img--3-2 bg-img--rounded" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{{poi.id}}.jpg');"></div>
+
+  <div class="col featured-poi__text">
+
+    <h4 class="title title--02 title--sm title--bold title--highlight">{{poi.title}}</h4>
+
+    {% if poi.title-sub %}
+      <div class="title--01 title--xxs title--bolder title--italic">{{poi.title-sub}}</div>
+    {% endif %}
+
+    <p class="text--small">{{poi.description}}</p>
+
+    {% if poi.location %}
+    <span class="poi__location">
+      {{poi.location}}
+    </span>
+    {% endif %}
+
+  </div>
+
+</div>
