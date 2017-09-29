@@ -1,6 +1,18 @@
 <div class="col poi">
   <div class="poi__image bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{{poi.id}}.jpg');"></div>
   <div class="space--md"></div>
-  <h4 class="title--xxs title--02 title--upper title--kerning">{{poi.title}}</h4>
+  <h4 class="title title--xs title--02">{{poi.title}}</h4>
+
+  {% if poi.title-sub %}
+    <div class="title--01 title--xxxs title--bolder title--italic">{{poi.title-sub}}</div>
+  {% endif %}
+
   <p class="text--small">{{poi.description}}</p>
+
+  {% if poi.location %}
+  <span class="poi__location">
+    {{poi.location}}
+  </span>
+  {% endif %}
+
 </div>

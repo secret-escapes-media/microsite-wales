@@ -3,43 +3,48 @@ layout: standard
 id: competition
 title: Competition
 nav-order: 4
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum quae, numquam magnam, necessitatibus consequatur placeat id aliquam veniam explicabo maxime iusto officiis aperiam. Unde quos, reprehenderit ea beatae in.
+intro: >
+  <p class="text--xl">Win a two-night stay in a veritable lakeside idyll, for an effortlessly rejuvenating autumnal treat. With a stay at the grand Lake Vyrnwy Hotel & Spa, you can relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, or head out into the wilderness for great hiking opportunities. </p>
+  <p class="text--xl">This grandiose house offers traditional countryside charms, set in a beguiling location perfect for crisp autumn walks. </p>
+
 
 banner:
   content: >
     <div class="row--xxl">
-      <h1 class="title title--banner title--xxxxl">Win a stay in the lap of luxury</h1>
+      <h1 class="title title--banner title--xxxxl">Win a perfect autumnal break in Wales</h1>
       <div class="space--md"></div>
       <a href="#competition" class="btn btn--red">Enter Now</a>
     </div>
 ---
 
+
+
 <div class="section">
   <div class="row row--padding row--xl text--center">
-    <div class="line-length--lg">
-      <p class="text--xl">{{page.intro}}</p>
-    </div>
+    {{page.intro}}
   </div>
 </div>
+
+
 
 <div class="section bg--grey">
   <div class="row row--padding">
     <div class="bob">
       <div class="bob__image">
-        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/{% cycle '01', '02' %}.jpg');"></div></a>
+        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/01.jpg');"></div></a>
       </div>
       <div class="bob__text">
-        <div class="title title--banner title--md">Competition Detail</div>
-        <p class="text--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere exercitationem provident quisquam possimus aut minus impedit repellat. Cum sit labore a non ipsum eligendi, atque laborum reprehenderit impedit mollitia voluptates accusantium expedita eos, quibusdam numquam praesentium. Eum, cum laudantium facilis recusandae laboriosam repellendus, nihil voluptatibus consequatur modi sapiente sint, eos.</p>
+        <div class="title title--banner title--md">The Hotel</div>
+        <p class="text--lg">Enjoy a lakeview room for a truly wondrous stay. Each morning you’ll be treated to breakfast, with seating looking out onto the lake. Enjoy dinner in the award-winning restaurant, sampling the delectable Welsh larder with seasonal produce and game heralding from the hotel’s 24,000-acre estate. Effortlessly romantic, the Lake Vyrnwy Hotel is the perfect rural escape.</p>
       </div>
     </div>
     <div class="bob">
       <div class="bob__image">
-        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/{% cycle '01', '02' %}.jpg');"></div></a>
+        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/02.jpg');"></div></a>
       </div>
       <div class="bob__text">
-        <div class="title title--banner title--md">Competition Detail</div>
-        <p class="text--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere exercitationem provident quisquam possimus aut minus impedit repellat. Cum sit labore a non ipsum eligendi, atque laborum reprehenderit impedit mollitia voluptates accusantium expedita eos, quibusdam numquam praesentium. Eum, cum laudantium facilis recusandae laboriosam repellendus, nihil voluptatibus consequatur modi sapiente sint, eos.</p>
+        <div class="title title--banner title--md">The Spa</div>
+        <p class="text--lg">The spa and thermal suite is set to indulge the senses. Take advantage of massages and treatments, before plunging into hot tubs and treating yourself to the sauna, experience shower and fire and ice treatments.</p>
       </div>
     </div>
   </div>

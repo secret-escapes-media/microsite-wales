@@ -2,7 +2,7 @@
 title: Wales
 client:
   name: Visit Wales
-  link: http://www.visitwales.com/
+  link: http://www.visitwales.com/?utm_source=secret-escapes&utm_medium=email&utm_campaign=yl47
 description: >
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 baseurl: "/wales" # the subpath of your site, e.g. /blog/
