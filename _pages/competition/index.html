@@ -3,18 +3,33 @@ layout: standard
 id: competition
 title: Competition
 nav-order: 4
-intro: >
-  <p class="text--xl">Win a two-night stay in a veritable lakeside idyll, for an effortlessly rejuvenating autumnal treat. With a stay at the grand Lake Vyrnwy Hotel & Spa, you can relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, or head out into the wilderness for great hiking opportunities. </p>
-  <p class="text--xl">This grandiose house offers traditional countryside charms, set in a beguiling location perfect for crisp autumn walks. </p>
 
 
 banner:
-  content: >
-    <div class="row--xxl">
-      <h1 class="title title--banner title--xxxxl">Win a perfect autumnal break in Wales</h1>
-      <div class="space--md"></div>
-      <a href="#competition" class="btn btn--red">Enter Now</a>
-    </div>
+content: >
+  <div class="row--xxl">
+    <h1 class="title title--banner title--xxxl">Win a perfect autumnal break in Wales</h1>
+    <div class="space--md"></div>
+    <a href="#competition" class="btn btn--red">Enter Now</a>
+  </div>
+
+
+intro: >
+  <p class="text--xl">Win a break in a lakeside idyll, with a Canon EOS M6 thrown in to capture those irresistible autumnal colours. </p>
+  <p class="text--xl">Enjoy a two-night stay in the beautiful Welsh countryside, for an effortlessly rejuvenating autumnal treat. With a stay at the grand Lake Vyrnwy Hotel & Spa, you can relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, or head out into the wilderness with your Canon EOS M6 to capture the unique beauty of Autumn in Wales.</p>
+  <p class="text--xl">This grand house offers traditional countryside charms, set in a beguiling location perfect for crisp autumnal walks.</p>
+
+
+prize:
+  - title: The Hotel & Spa
+    description: >
+      <p class="text--lg">Enjoy a lakeview room for a truly wondrous stay. Each morning you’ll be treated to breakfast, with a day to rejuvenate in the hotel’s spa. Enjoy dinner in the award-winning restaurant, sampling the delectable Welsh larder with seasonal produce and game heralding from the hotel’s 24,000-acre estate. Effortlessly romantic, the Lake Vyrnwy Hotel is the perfect rural escape.</p>
+
+  - title: The Camera
+    description: >
+      <p class="text--lg">The perfect travel companion is set to join you on your travels, with a specially designed camera bag and two lenses to complete the package. The Canon EOS M6 is smaller and more lightweight than regular DSLRs due to its mirrorless construction, making it perfect for capturing fleeting moments with ease. Try the 15-45mm lens or the 55-200mm to frame beautiful shots of any composition. This small camera is packed with big features.</p>
+      <a href="#" class="btn btn--red btn--sm">Find out more here</a>
+
 ---
 
 
@@ -29,34 +44,31 @@ banner:
 
 <div class="section bg--grey">
   <div class="row row--padding">
+
+    {% for prize in page.prize %}
     <div class="bob">
       <div class="bob__image">
-        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/01.jpg');"></div></a>
+        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/0{{forloop.index}}.jpg');"></div></a>
       </div>
       <div class="bob__text">
-        <div class="title title--banner title--md">The Hotel</div>
-        <p class="text--lg">Enjoy a lakeview room for a truly wondrous stay. Each morning you’ll be treated to breakfast, with seating looking out onto the lake. Enjoy dinner in the award-winning restaurant, sampling the delectable Welsh larder with seasonal produce and game heralding from the hotel’s 24,000-acre estate. Effortlessly romantic, the Lake Vyrnwy Hotel is the perfect rural escape.</p>
+        <div class="title title--banner title--md">{{prize.title}}</div>
+        {{prize.description}}
       </div>
     </div>
-    <div class="bob">
-      <div class="bob__image">
-        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/02.jpg');"></div></a>
-      </div>
-      <div class="bob__text">
-        <div class="title title--banner title--md">The Spa</div>
-        <p class="text--lg">The spa and thermal suite is set to indulge the senses. Take advantage of massages and treatments, before plunging into hot tubs and treating yourself to the sauna, experience shower and fire and ice treatments.</p>
-      </div>
-    </div>
+    {% endfor %}
+
   </div>
 </div>
 
+
+
 <div id="competition" class="section vpad--xxl">
   <div class="row row--padding">
-    <div class="row row--lg text--center">
-      <h2 class="title title--02 title--sm">Submit your details below to be entered into the draw. Good luck!</h2>
+    <div class="row row--xl text--center">
+      <h2 class="title title--02 title--xs">This enviable prize has been brought to you by our partner Welsh Rarebits. Submit your details below to be entered into the draw. Good luck!</h2>
     </div>
     <div class="row">
-      <div class="dummy-comp"><img src="{{site.baseurl}}/img/dummy-comp.png" alt=""></div>
+      <iframe src="https://promotion4059.strutta.me" width="100%" height="600"></iframe>
     </div>
   </div>
 </div>
