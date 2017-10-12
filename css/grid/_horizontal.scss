@@ -92,4 +92,8 @@ $page-margin: $s4;
       margin-bottom: gutter();
     }
   }
+  &--4-4-4-nobp .col {
+    @include gallery(4);
+    margin-top: 0 !important;
+  }
 }

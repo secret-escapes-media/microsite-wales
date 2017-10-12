@@ -61,6 +61,15 @@ layout: standard
   {% endif %}
 
 
+  {% if section.link %}
+  <div class="row row--padding text--center">
+    <div class="space--md"></div>
+    <a href="{{ section.link }}" class="btn btn--lg btn--red">Continue reading on Visit Wales</a>
+    <div class="space--md"></div>
+  </div>
+  {% endif %}
+
+
 
 </div>
 {% endfor %} <!-- end section -->

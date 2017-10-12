@@ -1,6 +1,12 @@
 <div class="row row--padding featured-poi">
 
-  <div class="col featured-poi__image bg-img bg-img--3-2 bg-img--rounded" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{{poi.id}}.jpg');"></div>
+  <div class="col featured-poi__image bg-img bg-img--3-2 bg-img--rounded" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{{poi.id}}.jpg');">
+    {% if poi.image-credit %}
+    <div class="bg-img__credit">
+      {{poi.image-credit}}
+    </div>
+    {% endif %}
+  </div>
 
   <div class="col featured-poi__text">
 
@@ -12,11 +18,19 @@
 
     <p class="text--small">{{poi.description}}</p>
 
-    {% if poi.location %}
-    <span class="poi__location">
-      {{poi.location}}
-    </span>
-    {% endif %}
+    <div class="poi__footer">
+      {% if poi.locations %}
+      {% for location in poi.locations %}
+      <span class="poi__location">
+        {{location.title}}
+      </span>
+      {% endfor %}
+      {% endif %}
+
+      {% if poi.link %}
+      <a href="{{ poi.link }}" class="poi__btn btn btn--sm btn--white-outline">Read more</a>
+      {% endif %}
+    </div>
 
   </div>
 

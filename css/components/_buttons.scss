@@ -18,10 +18,10 @@
   @include transition;
   * + & { margin-top: 1.5em; }
   &--sm {
-    padding: $s1 $s4;
+    padding: $s0 $s4;
     font-size: $s-2;
   }
-  &--lg { font-size: $s0; }
+  &--lg { font-size: $s0; font-weight: 700; }
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
