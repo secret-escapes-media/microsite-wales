@@ -15,20 +15,24 @@ banner:
 
 
 intro: >
-  <p class="text--lg">Win a break in a lakeside idyll, with a Canon EOS M6 thrown in to capture those irresistible autumnal colours plus kit from Cotswold Outdoor for a true autumnal adventure.</p>
+  <p class="text--lg">Win a break in a lakeside idyll, with a Canon EOS M6 mirrorless camera kit thrown in to capture those irresistible autumnal colours plus clothing from Cotswold Outdoor for a true autumnal adventure.</p>
   <p class="text--lg">Win a two-night stay in the beautiful Welsh countryside, for an effortlessly rejuvenating autumnal treat. With a stay at the grand Lake Vyrnwy Hotel & Spa, you can relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, or head out into the wilderness with your Canon EOS M6 to capture the unique beauty of Autumn in Wales. Let Cotswold Outdoor kit you out for intrepid exploring in the wilds of Snowdonia and immerse yourself in nature.</p>
   <p class="text--lg">This grand house offers traditional countryside charms, set in a beguiling location perfect for crisp autumnal walks. </p>
   <a href="#competition" class="btn btn--red">Enter Now</a>
 
 
 prize:
-  - title: The Hotel & Spa
+  - title: The Hotel
     description: >
-      <p>Enjoy a lakeview room for a truly wondrous stay. Each morning you’ll be treated to breakfast, with a day to rejuvenate in the hotel’s spa. Enjoy dinner in the award-winning restaurant, sampling the delectable Welsh larder with seasonal produce and game heralding from the hotel’s 24,000-acre estate. Effortlessly romantic, the Lake Vyrnwy Hotel is the perfect rural escape.</p>
+      <p>Enjoy a lakeview room for a truly wondrous stay. Each morning you’ll be treated to breakfast, with a day to rejuvenate in the hotel’s spa. Effortlessly romantic, the Lake Vyrnwy Hotel is the perfect rural escape.</p>
+
+  - title: Fine Dining
+    description: >
+      <p>Enjoy dinner at the award-winning Palé Hall restaurant and sample the delectable Welsh larder, with seasonal produce all locally-sourced for an inspired foodie treat. À-la-carte offerings are bestowed with an AA 3 rosette rating, ensuring an outstanding culinary adventure.</p>
 
   - title: Canon Camera Package
     description: >
-      <p>The perfect travel companion is set to join you on your travels, with a specially designed camera bag and two lenses to complete the package. The Canon EOS M6 is smaller and more lightweight than regular DSLRs due to its mirrorless construction, making it perfect for capturing fleeting moments with ease. Try the 15-45mm lens or the 55-200mm to frame beautiful shots of any composition. This small camera is packed with big features.</p>
+      <p>The Canon EOS M6 camera is the perfect travel companion to join you on your travels, with a specially designed camera bag and two lenses to complete the package. A mirrorless camera offers the power and quality of a DSLR camera, but in a compact and lightweight body, making the EOS M6 perfect for capturing  your travel moments. Swap between the perfect all-rounder 15-45mm lens and the 55-200mm zoom lens to capture the perfect shot.</p>
       <a href="#" class="btn btn--red btn--sm">Find out more here</a>
 
   - title: Clothing from Cotswold Outdoor
@@ -61,7 +65,7 @@ prize:
     {% for prize in page.prize %}
     <div class="bob">
       <div class="bob__image">
-        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/prize-0{{forloop.index}}.jpg');"></div></a>
+        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/{{prize.title|slugify}}.jpg');"></div></a>
       </div>
       <div class="bob__text">
         <div class="title title--banner title--md">{{prize.title}}</div>
@@ -78,7 +82,7 @@ prize:
 <div id="competition" class="section vpad--xxl">
   <div class="row row--padding">
     <div class="row row--xl text--center">
-      <h2 class="title title--02 title--xs">This enviable prize has been brought to you by our partner Welsh Rarebits. Submit your details below to be entered into the draw. Good luck!</h2>
+      <h2 class="title title--02 title--xs">This enviable hotel prize has been brought to you by our partner Welsh Rarebits. Submit your details below to be entered into the draw. Good luck!</h2>
     </div>
     <div class="row">
       <iframe src="https://promotion4059.strutta.me" width="100%" height="700"> </iframe>
