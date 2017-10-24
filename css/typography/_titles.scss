@@ -1,6 +1,7 @@
 // Title & headline styles
 
 .title {
+  line-height: 1.25;
   &--01 {
     font-family: $font-family-headline-01;
     line-height: 1.1;
@@ -14,6 +15,9 @@
     font-weight: 900;
     font-style: italic;
     line-height: 1.1;
+    font-size: $s6;
+    @include bp(lg){ font-size: $s8; }
+    @include bp(xxl){ font-size: $s10; }
   }
   &--core {
     font-family: $font-family;
@@ -43,7 +47,8 @@
   &--upper      { text-transform: uppercase; }
   &--italic     { font-style: italic; }
 
-  &--banner-size  { font-size: $s11; }
+  &--banner-size  { font-size: $s9; }
+  &--banner-small  { font-size: $s5; }
   &--xxxxxl       { font-size: $s9; }
   &--xxxxl        { font-size: $s8; }
   &--xxxl         { font-size: $s7; }
@@ -52,12 +57,14 @@
   &--lg           { font-size: $s4; }
   &--md           { font-size: $s3; }
   &--sm           { font-size: $s2; }
-  &--xs           { font-size: $s1; }
+  &--xs           { font-size: $s2; }
   &--xxs          { font-size: $s0; }
   &--xxxs         { font-size: $s-1; }
 
+
   @include bp(lg){
     &--banner-size  { font-size: $s13; }
+    &--banner-small  { font-size: $s9; }
     &--xxxxxl       { font-size: $s11; }
     &--xxxxl        { font-size: $s10; }
     &--xxxl         { font-size: $s9; }

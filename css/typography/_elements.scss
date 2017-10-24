@@ -6,10 +6,13 @@ p {
 }
 
 .text {
-  &--xxl    { font-size: $s3; }
-  &--xl     { font-size: $s2; }
-  &--lg     { font-size: $s1; }
-  &--sm     { font-size: $s-1; font-weight: 400; }
+
+  @include bp(lg){
+    &--xxl    { font-size: $s3; }
+    &--xl     { font-size: $s2; }
+    &--lg     { font-size: $s1; }
+    &--sm     { font-size: $s-1; font-weight: 400; }
+  }
   &--left   { text-align: left; }
   &--right  { text-align: right; }
   &--center { text-align: center; }
@@ -29,7 +32,7 @@ p {
 .page__content {
   * + p,
   * + ul,
-  * + ol               { padding-top: $s1; }
+  * + ol               { padding-top: $s-1; }
   li                   { list-style-position: outside; margin-left: $s2; }
   li + li              { padding-top: $s-2; }
   ul li                { list-style-type: disc; }

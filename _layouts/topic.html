@@ -28,10 +28,9 @@ layout: standard
 {% for section in page-sections %}
 <div class="section{% cycle ' bg--grey', '' %}" id="section-{{section.title | slugify}}">
 
-  <div class="row row--padding text--center">
+  <div class="row row--padding text--center vpad--md">
     <h3 class="title title--xl title--italic title--bold">{{section.title}}</h3>
     <p class="text--lg line-length--lg">{{section.description}}</p>
-    <div class="space--lg"></div>
   </div>
 
 
@@ -62,10 +61,9 @@ layout: standard
 
 
   {% if section.link %}
-  <div class="row row--padding text--center">
-    <div class="space--md"></div>
-    <a href="{{ section.link }}" class="btn btn--lg btn--red">Continue reading on Visit Wales</a>
-    <div class="space--md"></div>
+  <div class="row row--padding text--center vpad--xs">
+    <a href="{{ section.link }}" id="tracking-btn-{{section.title|slugify}}" class="btn btn--lg btn--red">Continue reading on Visit Wales</a>
+    <div class="space--sm"></div>
   </div>
   {% endif %}
 

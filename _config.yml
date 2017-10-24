@@ -4,7 +4,7 @@ client:
   name: Visit Wales
   link: http://www.visitwales.com/?utm_source=secret-escapes&utm_medium=email&utm_campaign=yl47
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Wales is the stuff of legends. Craggy peaks and wild weather, ruined castles clinging to precarious summits, folk tales and new writers – Wales is a landscape of drama, irresistible romance, and superlative escapes.
 baseurl: "/wales" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 

@@ -1,49 +1,4 @@
 
-- title: The Grove Narberth
-  id: the-grove-narberth
-  location: Pembrokeshire, Wales
-  description: A Welsh boutique stay at an award-winning retreat
-  price: 149
-  price-description: per room per night
-  saved: 50
-  link: https://www.secretescapes.com/the-grove-narberth-pembrokeshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: Best Western Lamphey Court Hotel & Spa
-  id: best-western-lamphey-court-hotel-spa
-  location: Pembrokeshire, Wales
-  description: Period charm a short drive from the breathtaking Pembrokeshire coastline
-  price: 69
-  price-description: per room per night
-  saved: 57
-  link: https://www.secretescapes.com/best-western-lamphey-court-hotel-and-spa-pembrokeshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: The Corran Resort & Spa
-  id: the-corran-resort-spa
-  location: Carmarthenshire, Wales
-  description: A stylish country spa retreat in Laugharne
-  price: 109
-  price-description: per suite per night
-  saved: 46
-  link: https://www.secretescapes.com/the-corran-resort-and-spa-carmarthenshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: The Mulberry Inn
-  id: the-mulberry-inn
-  location: Denbighshire, Wales
-  description: A tranquil retreat in the Welsh countryside
-  price: 75
-  price-description: per room per night
-  saved: 32
-  link: https://www.secretescapes.com/the-mulberry-inn-denbighshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: Tre-Ysgawen Hall Country House Hotel & Spa
-  id: tre-ysgawen-hall-country-house-hotel-spa
-  location: Anglesey, Wales
-  description: A stately country stay on the Welsh island of Anglesey
-  price: 99
-  price-description: per room per night
-  saved: 62
-  link: https://www.secretescapes.com/tre-ysgawen-hall-country-house-hotel-and-spa-anglesey-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
 - title: Hallmark Hotel Llyndir Hall
   id: hallmark-hotel-llyndir-hall
   location: Rossett near Chester and Wrexham, Wales
@@ -89,15 +44,6 @@
   saved: 28
   link: https://www.secretescapes.com/plas-bodegroes-hotel-pwllheli-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: The Royal Oak Hotel
-  id: the-royal-oak-hotel
-  location: Welshpool, Wales
-  description: A former Welsh earl's manor house with cosy decor
-  price: 54
-  price-description: per room per night
-  saved: 37
-  link: https://www.secretescapes.com/the-royal-oak-hotel-welshpool-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
 - title: Emlyn Hotel
   id: emlyn-hotel
   location: Newcastle Emlyn, Carmarthenshire
@@ -115,5 +61,23 @@
   price-description: per room per night
   saved: 21
   link: https://www.secretescapes.com/west-house-country-hotel-llantwit-major-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: The Cawdor
+  id: the-cawdor
+  location: Llandeilo, Wales
+  description: A boutique former coaching inn in Carmarthenshire
+  price: 110
+  price-description: per room per night
+  saved: 43
+  link: https://www.secretescapes.com/the-cawdor-llandeilo-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: Welsh Highland Railway experience with castle visit
+  id: welsh-highland-railway-experience-with-castle-visit
+  location: Celtic Royal Hotel, Caernarfon
+  description: See Snowdonia National Park from a steam railway
+  price: 249
+  price-description: per person for 2 nights
+  saved: 44
+  link: https://www.secretescapes.com/welsh-highland-railway-experience-with-castle-visit-including-a-stay-at-celtic-royal-hotel-caernarfon/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
 

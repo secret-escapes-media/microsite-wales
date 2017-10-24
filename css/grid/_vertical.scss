@@ -3,12 +3,19 @@
 
 // default sections
 .section {
-  padding-top: $s8;
-  padding-bottom: $s8;
+  padding-top: $s4;
+  padding-bottom: $s4;
+  @include bp(lg){
+    padding-top: $s8;
+    padding-bottom: $s8;
+  }
 }
 
 .row {
-  & + & { margin-top: $s6; }
+  & + & { margin-top: $s4; }
+  @include bp(lg){
+    & + & { margin-top: $s6; }
+  }
 }
 
 .col {
@@ -21,13 +28,18 @@
 // equal vertical padding for large elements
 // !!!!!!!!!! this could all be on the section, eg short section, massive section etc
 .vpad {
-  &--xxxxl { padding-top: $s14; padding-bottom: $s14; }
-  &--xxxl  { padding-top: $s12; padding-bottom: $s12; }
-  &--xxl   { padding-top: $s10; padding-bottom: $s10; }
+  &--xxxxl { padding-top: $s8; padding-bottom: $s8; }
+  &--xxxl  { padding-top: $s8; padding-bottom: $s8; }
+  &--xxl   { padding-top: $s8; padding-bottom: $s8; }
   &--xl    { padding-top: $s8; padding-bottom: $s8; }
   &--lg    { padding-top: $s6; padding-bottom: $s6; }
   &--md    { padding-top: $s4; padding-bottom: $s4; }
   &--sm    { padding-top: $s2; padding-bottom: $s2; }
+  @include bp(lg){
+    &--xxxxl { padding-top: $s14; padding-bottom: $s14; }
+    &--xxxl  { padding-top: $s12; padding-bottom: $s12; }
+    &--xxl   { padding-top: $s10; padding-bottom: $s10; }
+  }
 }
 
 // add in the occasional space for internal content

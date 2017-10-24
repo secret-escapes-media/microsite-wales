@@ -5,21 +5,33 @@
   &__image {}
   &__content {}
   &__footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    border-top: 1px solid rgba($white,0.1);
     padding-top: 1em;
     margin-top: 1em;
     width: 100%;
+    text-align: center;
+    @include bp(xxl){
+      padding-top: 0;
+      text-align: left;
+    }
   }
   &__location {
-    padding-top: 0.5em;
+    margin-bottom: $s-1;
+    padding-top: 0;
     font-size: 0.9em;
     line-height: 1.5;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     font-weight: 600;
     color: $white;
     display: inline-block;
     margin-right: 1.5em;
+    vertical-align: top;
+    @include bp(xl){
+      padding-top: 1em;
+      vertical-align: middle;
+      margin-bottom: 0;
+    }
     &:before {
       content: "";
       display: inline-block;
@@ -38,23 +50,32 @@
     }
   }
   &__btn {
-    float: right;
+    display: none;
     margin-top: 0;
+    @include bp(md){ display: inline-block; }
+    @include bp(xxl){
+      border-radius: 0 0 3px 3px;
+      float: right;
+      &:before {
+        border-color: rgba($white,0.1);
+        border-top: 0;
+      }
+    }
   }
 }
 
 .featured-poi {
   @include layout(12 1/2);
   text-align: center;
+  & + & { margin-top: $s1; }
   &__image {
     max-width: $lg;
     margin-left: auto;
     margin-right: auto;
   }
-  &__text { padding-top: $s2; }
-  & + & { margin-top: $s2; }
+  &__text { padding-top: $s1; margin-top: 0 !important; text-align: left; }
+
   @include bp(xxl){
-    text-align: left;
     & + & { margin-top: $s4; }
     &__text {}
     .flexbox & {

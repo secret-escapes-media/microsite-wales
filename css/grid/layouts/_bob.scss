@@ -17,7 +17,7 @@
     text-align: left;
     &__text { padding-top: $s2; }
     // GRID STUFF
-    & + & { margin-top: gutter(6); }
+    & + & { margin-top: $s4; }
     .flexbox & {
       display: flex;
       align-items: center;

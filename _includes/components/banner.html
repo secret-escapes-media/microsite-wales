@@ -12,11 +12,11 @@
         {% endif %}
 
         <div class="space--md"></div>
-        <h1 class="title title--banner{% if page.id == 'overview' %} title--banner-size{% else %} title--xxxxl{% endif %}">
+        <h1 class="title title--banner{% if page.id == 'overview' %} title--banner-size{% endif %}">
           {% if page.banner.title %} {{page.banner.title}} {% else %} {{page.title}} {% endif %}
         </h1>
         <div class="space--md"></div>
-        
+
         {% if page.banner.title-sub %}
           <div class="title title--02 title--sub title--sm">{{page.banner.title-sub}}</div>
         {% endif %}
