@@ -1,49 +1,119 @@
-- title: Spectacular Oslo & Bergen break with optional fjord tour
-  id: spectacular-oslo-bergen-break-with-optional-fjord-tour
-  location: Scandic St. Olavs plass & Clarion Hotel Admiral, Norway
-  description: A fantastic four-night trip to Norway's Oslo and Bergen, with one of the world's most scenic train journeys between the two cities - including flights and an optional fjord tour
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2018/04/14
-  link: https://www.secretescapes.com/spectacular-oslo-and-bergen-break-with-optional-fjord-tour-scandic-st-olavs-plass-and-clarion-hotel-admiral-norway-2/sale?gce_urg=0&utm_source=SE&utm_campaign=7_Norway_201703&utm_medium=Hub
 
-- title: Farris Bad
-  id: farris-bad
-  location: Larvik, Norway
-  description: Upscale beachfront stay at the first Nordic balneological health resort, with a supersized spa
-  price: 214
+- title: The Grove Narberth
+  id: the-grove-narberth
+  location: Pembrokeshire, Wales
+  description: A Welsh boutique stay at an award-winning retreat
+  price: 149
   price-description: per room per night
-  saved: 33
-  expires: 2018/04/20
-  link: https://www.secretescapes.com/farris-bad-larvik-norway/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=12_Norway_201703
+  saved: 50
+  link: https://www.secretescapes.com/the-grove-narberth-pembrokeshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: First Hotel Marin
-  id: first-hotel-marin
-  location: Bergen, Norway
-  description: A unique stay in the centre of picturesque Bergen, just a stone's throw from the harbour
-  price: 48
+- title: Best Western Lamphey Court Hotel & Spa
+  id: best-western-lamphey-court-hotel-spa
+  location: Pembrokeshire, Wales
+  description: Period charm a short drive from the breathtaking Pembrokeshire coastline
+  price: 69
   price-description: per room per night
-  saved: 43
-  expires: 2018/04/20
-  link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
+  saved: 57
+  link: https://www.secretescapes.com/best-western-lamphey-court-hotel-and-spa-pembrokeshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: Magic Hotel
-  id: magic-hotel
-  location: Bergen, Norway
-  description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-  price: 73
+- title: The Corran Resort & Spa
+  id: the-corran-resort-spa
+  location: Carmarthenshire, Wales
+  description: A stylish country spa retreat in Laugharne
+  price: 109
+  price-description: per suite per night
+  saved: 46
+  link: https://www.secretescapes.com/the-corran-resort-and-spa-carmarthenshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: The Mulberry Inn
+  id: the-mulberry-inn
+  location: Denbighshire, Wales
+  description: A tranquil retreat in the Welsh countryside
+  price: 75
   price-description: per room per night
-  saved: 55
-  expires: 2018/04/20
-  link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
+  saved: 32
+  link: https://www.secretescapes.com/the-mulberry-inn-denbighshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: Sola Strand Hotel
-  id: sola-strand-hotel
-  location: Sola, Norway
-  description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
+- title: Tre-Ysgawen Hall Country House Hotel & Spa
+  id: tre-ysgawen-hall-country-house-hotel-spa
+  location: Anglesey, Wales
+  description: A stately country stay on the Welsh island of Anglesey
+  price: 99
+  price-description: per room per night
+  saved: 62
+  link: https://www.secretescapes.com/tre-ysgawen-hall-country-house-hotel-and-spa-anglesey-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: Hallmark Hotel Llyndir Hall
+  id: hallmark-hotel-llyndir-hall
+  location: Rossett near Chester and Wrexham, Wales
+  description: A Welsh country spa hotel near Chester and Wrexham
   price: 79
   price-description: per room per night
-  saved: 47
-  expires: 2018/04/20
-  link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
+  saved: 44
+  link: https://www.secretescapes.com/hallmark-hotel-llyndir-hall-rossett-near-chester-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: Celtic Manor Resort
+  id: celtic-manor-resort
+  location: Newport, Wales
+  description: A top Welsh golf and spa stay with family option
+  price: 152
+  price-description: per room per night
+  saved: 56
+  link: https://www.secretescapes.com/celtic-manor-resort-newport-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: The West Arms
+  id: the-west-arms
+  location: Ceiriog Valley, North Wales
+  description: Welsh charm and renowned dining at a 16th-century inn
+  price: 79
+  price-description: per room per night
+  saved: 46
+  link: https://www.secretescapes.com/the-west-arms-ceiriog-valley-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: Ruthin Castle Hotel & Spa
+  id: ruthin-castle-hotel-spa
+  location: Ruthin, North Wales
+  description: An award-winning stay at a former royal residence in North Wales
+  price: 129
+  price-description: per room per night
+  saved: 35
+  link: https://www.secretescapes.com/ruthin-castle-hotel-and-spa-ruthin-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: Plas Bodegroes Hotel
+  id: plas-bodegroes-hotel
+  location: Pwllheli, North Wales
+  description: A boutique Welsh country stay with acclaimed dining
+  price: 89
+  price-description: per room per night
+  saved: 28
+  link: https://www.secretescapes.com/plas-bodegroes-hotel-pwllheli-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: The Royal Oak Hotel
+  id: the-royal-oak-hotel
+  location: Welshpool, Wales
+  description: A former Welsh earl's manor house with cosy decor
+  price: 54
+  price-description: per room per night
+  saved: 37
+  link: https://www.secretescapes.com/the-royal-oak-hotel-welshpool-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: Emlyn Hotel
+  id: emlyn-hotel
+  location: Newcastle Emlyn, Carmarthenshire
+  description: A charming West Wales stay in a former 17th-century coaching inn
+  price: 69
+  price-description: per room per night
+  saved: 41
+  link: https://www.secretescapes.com/emlyn-hotel-newcastle-emlyn-carmarthenshire/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+- title: West House Hotel
+  id: west-house-hotel
+  location: Llantwit Major, Wales
+  description: An inviting B&B stay on the Heritage Coast of South Wales
+  price: 85
+  price-description: per room per night
+  saved: 21
+  link: https://www.secretescapes.com/west-house-country-hotel-llantwit-major-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+
+
