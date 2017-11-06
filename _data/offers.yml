@@ -1,83 +1,38 @@
 
-- title: Hallmark Hotel Llyndir Hall
-  id: hallmark-hotel-llyndir-hall
-  location: Rossett near Chester and Wrexham, Wales
-  description: A Welsh country spa hotel near Chester and Wrexham
-  price: 79
+- title: The Mulberry Inn
+  id: the-mulberry-inn
+  location: Denbighshire, Wales
+  description: A tranquil retreat in the Welsh countryside
+  price: 75
   price-description: per room per night
-  saved: 44
-  link: https://www.secretescapes.com/hallmark-hotel-llyndir-hall-rossett-near-chester-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+  saved: 32
+  link: https://www.secretescapes.com/the-mulberry-inn-denbighshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: Celtic Manor Resort
-  id: celtic-manor-resort
-  location: Newport, Wales
-  description: A top Welsh golf and spa stay with family option
-  price: 152
-  price-description: per room per night
-  saved: 56
-  link: https://www.secretescapes.com/celtic-manor-resort-newport-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: The West Arms
-  id: the-west-arms
-  location: Ceiriog Valley, North Wales
-  description: Welsh charm and renowned dining at a 16th-century inn
-  price: 79
-  price-description: per room per night
-  saved: 46
-  link: https://www.secretescapes.com/the-west-arms-ceiriog-valley-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: Ruthin Castle Hotel & Spa
-  id: ruthin-castle-hotel-spa
-  location: Ruthin, North Wales
-  description: An award-winning stay at a former royal residence in North Wales
-  price: 129
-  price-description: per room per night
-  saved: 35
-  link: https://www.secretescapes.com/ruthin-castle-hotel-and-spa-ruthin-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: Plas Bodegroes Hotel
-  id: plas-bodegroes-hotel
-  location: Pwllheli, North Wales
-  description: A boutique Welsh country stay with acclaimed dining
+- title: Belmont Llandudno
+  id: belmont-llandudno
+  location: Llandudno, Wales
+  description: A brand-new boutique hotel in the seaside town of Llandudno
   price: 89
   price-description: per room per night
-  saved: 28
-  link: https://www.secretescapes.com/plas-bodegroes-hotel-pwllheli-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+  saved: 39
+  link: https://www.secretescapes.com/belmont-llandudno-llandudno-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: Emlyn Hotel
-  id: emlyn-hotel
-  location: Newcastle Emlyn, Carmarthenshire
-  description: A charming West Wales stay in a former 17th-century coaching inn
-  price: 69
+- title: Clayton Hotel Cardiff
+  id: clayton-hotel-cardiff
+  location: Cardiff, Wales
+  description: A contemporary central Cardiff stay with city views
+  price: 89
   price-description: per room per night
-  saved: 41
-  link: https://www.secretescapes.com/emlyn-hotel-newcastle-emlyn-carmarthenshire/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+  saved: 55
+  link: https://www.secretescapes.com/clayton-hotel-cardiff-cardiff-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: West House Hotel
-  id: west-house-hotel
-  location: Llantwit Major, Wales
-  description: An inviting B&B stay on the Heritage Coast of South Wales
-  price: 85
+- title: The Quay Hotel & Spa
+  id: the-quay-hotel-spa
+  location: Conwy, North Wales
+  description: A stylish award-winning spa hotel in North Wales
+  price: 99
   price-description: per room per night
-  saved: 21
-  link: https://www.secretescapes.com/west-house-country-hotel-llantwit-major-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: The Cawdor
-  id: the-cawdor
-  location: Llandeilo, Wales
-  description: A boutique former coaching inn in Carmarthenshire
-  price: 110
-  price-description: per room per night
-  saved: 43
-  link: https://www.secretescapes.com/the-cawdor-llandeilo-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
-- title: Welsh Highland Railway experience with castle visit
-  id: welsh-highland-railway-experience-with-castle-visit
-  location: Celtic Royal Hotel, Caernarfon
-  description: See Snowdonia National Park from a steam railway
-  price: 249
-  price-description: per person for 2 nights
-  saved: 44
-  link: https://www.secretescapes.com/welsh-highland-railway-experience-with-castle-visit-including-a-stay-at-celtic-royal-hotel-caernarfon/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+  saved: 37
+  link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
 
 
