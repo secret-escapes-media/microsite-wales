@@ -1,13 +1,4 @@
 
-- title: The Mulberry Inn
-  id: the-mulberry-inn
-  location: Denbighshire, Wales
-  description: A tranquil retreat in the Welsh countryside
-  price: 75
-  price-description: per room per night
-  saved: 32
-  link: https://www.secretescapes.com/the-mulberry-inn-denbighshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
-
 - title: Belmont Llandudno
   id: belmont-llandudno
   location: Llandudno, Wales
