@@ -26,4 +26,22 @@
   saved: 37
   link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
 
+- title: Palé Hall
+  id: pale-hall
+  location: Gwynedd, North Wales
+  description: A five-star Welsh mansion stay with 3 AA Rosette dining
+  price: 165
+  price-description: per room per night
+  saved: 44
+  link: https://www.secretescapes.com/pale-hall-gwynedd-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
+
+- title: Holiday Inn Cardiff City Centre
+  id: holiday-inn-cardiff-city-centre
+  location: Cardiff, Wales
+  description: Modern luxe at a central Cardiff base
+  price: 89
+  price-description: per room per night
+  saved: 52
+  link: https://www.secretescapes.com/holiday-inn-cardiff-city-center-cardiff-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
+
 
