@@ -1,47 +1,21 @@
 
-- title: Belmont Llandudno
-  id: belmont-llandudno
-  location: Llandudno, Wales
-  description: A brand-new boutique hotel in the seaside town of Llandudno
-  price: 89
-  price-description: per room per night
-  saved: 39
-  link: https://www.secretescapes.com/belmont-llandudno-llandudno-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
 
-- title: Clayton Hotel Cardiff
-  id: clayton-hotel-cardiff
-  location: Cardiff, Wales
-  description: A contemporary central Cardiff stay with city views
-  price: 89
+- title: The Falcondale Hotel & Restaurant
+  id: the-falcondale-hotel-restaurant
+  location: Ceredigion, Wales
+  description: An elegant country hotel in the foothills of the Cambrian Mountains
+  price: 82
   price-description: per room per night
-  saved: 55
-  link: https://www.secretescapes.com/clayton-hotel-cardiff-cardiff-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Oct2017
+  saved: 38
+  link: https://www.secretescapes.com/the-falcondale-hotel-and-restaurant-ceredigion-wales-uk/sale?gce_bfpop=0&utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
 
-- title: The Quay Hotel & Spa
-  id: the-quay-hotel-spa
-  location: Conwy, North Wales
-  description: A stylish award-winning spa hotel in North Wales
-  price: 99
+- title: Macdonald Plas Talgarth Resort
+  id: macdonald-plas-talgarth-resort
+  location: Machynlleth, Wales
+  description: A self-catering stay in Snowdonia National Park
+  price: 49
   price-description: per room per night
-  saved: 37
-  link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
-
-- title: Palé Hall
-  id: pale-hall
-  location: Gwynedd, North Wales
-  description: A five-star Welsh mansion stay with 3 AA Rosette dining
-  price: 165
-  price-description: per room per night
-  saved: 44
-  link: https://www.secretescapes.com/pale-hall-gwynedd-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
-
-- title: Holiday Inn Cardiff City Centre
-  id: holiday-inn-cardiff-city-centre
-  location: Cardiff, Wales
-  description: Modern luxe at a central Cardiff base
-  price: 89
-  price-description: per room per night
-  saved: 52
-  link: https://www.secretescapes.com/holiday-inn-cardiff-city-center-cardiff-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
+  saved: 42
+  link: https://www.secretescapes.com/macdonald-plas-talgarth-resort-machynlleth-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
 
 
