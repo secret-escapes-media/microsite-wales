@@ -1,21 +1,21 @@
 
 
-- title: The Falcondale Hotel & Restaurant
-  id: the-falcondale-hotel-restaurant
-  location: Ceredigion, Wales
-  description: An elegant country hotel in the foothills of the Cambrian Mountains
-  price: 82
-  price-description: per room per night
-  saved: 38
-  link: https://www.secretescapes.com/the-falcondale-hotel-and-restaurant-ceredigion-wales-uk/sale?gce_bfpop=0&utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
-
-- title: Macdonald Plas Talgarth Resort
-  id: macdonald-plas-talgarth-resort
-  location: Machynlleth, Wales
-  description: A self-catering stay in Snowdonia National Park
+- title: The Royal Oak
+  id: the-royal-oak
+  location: Welshpool, Wales
+  description: A former Welsh earl's manor house with cosy decor
   price: 49
   price-description: per room per night
-  saved: 42
-  link: https://www.secretescapes.com/macdonald-plas-talgarth-resort-machynlleth-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Nov2017
+  saved: 51
+  link: https://www.secretescapes.com/the-royal-oak-welshpool-wales/sale?gce_bfpop=0&utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Dec2017
+
+- title: Celtic Manor Resort
+  id: celtic-manor-resort
+  location: Newport, Wales
+  description: A luxury Welsh golf and spa stay with gourmet dining
+  price: 152
+  price-description: per room per night
+  saved: 54
+  link: https://www.secretescapes.com/celtic-manor-resort-newport-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Dec2017
 
 
