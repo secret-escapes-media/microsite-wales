@@ -1,14 +1,5 @@
 
 
-- title: The Royal Oak
-  id: the-royal-oak
-  location: Welshpool, Wales
-  description: A former Welsh earl's manor house with cosy decor
-  price: 49
-  price-description: per room per night
-  saved: 51
-  link: https://www.secretescapes.com/the-royal-oak-welshpool-wales/sale?gce_bfpop=0&utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Dec2017
-
 - title: Celtic Manor Resort
   id: celtic-manor-resort
   location: Newport, Wales
@@ -18,4 +9,33 @@
   saved: 54
   link: https://www.secretescapes.com/celtic-manor-resort-newport-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Dec2017
 
+
+- title: The Castle Hotel
+  id: the-castle-hotel
+  location: Conwy, North Wales
+  description: An old Welsh coaching inn within historic Conwy
+  price: 49
+  price-description: per room per night
+  saved: 57
+  link: https://www.secretescapes.com/the-castle-hotel-conwy-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales%20_Dec2017
+
+
+- title: The Corran Resort & Spa
+  id: the-corran-resort-spa
+  location: Carmarthenshire, Wales
+  description: A stylish country spa retreat in Laugharne
+  price: 109
+  price-description: per suite per night
+  saved: 33
+  link: https://www.secretescapes.com/the-corran-resort-and-spa-carmarthenshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales%20_Dec2017
+
+
+- title: The Grove Narberth
+  id: the-grove-narberth
+  location: Pembrokeshire, Wales
+  description: A luxe hotel with acclaimed restaurant in rural Wales
+  price: 159
+  price-description: per room per night
+  saved: 53
+  link: https://www.secretescapes.com/the-grove-narberth-pembrokeshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales%20_Dec2017
 
