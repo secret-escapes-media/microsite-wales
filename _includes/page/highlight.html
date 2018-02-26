@@ -1,0 +1,25 @@
+
+<div class="col">
+
+  <div class="bg-img bg-img--16-9 bg--rounded" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.title||slugify}}.jpg);"></div>
+
+  <div class="space--sm"></div>
+
+  <h4 class="title title--xs title--arvo">{{highlight.title}}</h4>
+  <p>{{highlight.content}}</p>
+
+  {% if highlight.location %}
+  <div class="highlight__footer">
+    {% if highlight.location %}
+      <div class="highlight__location">
+        {{ highlight.location }}
+      </div>
+    {% endif %}
+    {% if highlight.link %}
+      <a class="highlight__cta btn btn--sm btn--outline-white" href="{{highlight.link}}">Read more</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="space--lg"></div>
+</div>

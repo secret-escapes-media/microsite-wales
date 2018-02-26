@@ -1,18 +1,24 @@
 # Site settings
 title: Wales
 client:
-  name: Visit Wales
-  link: http://www.visitwales.com/?utm_source=secret-escapes&utm_medium=email&utm_campaign=yl47
+  name: Wales
+  link: "http://www.visitwales.com/"
+core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  Wales is the stuff of legends. Craggy peaks and wild weather, ruined castles clinging to precarious summits, folk tales and new writers – Wales is a landscape of drama, irresistible romance, and superlative escapes.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+# file paths
+url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
 baseurl: "/wales" # the subpath of your site, e.g. /blog/
-url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
+img:     "/wales/_assets/img"
+css:     "/wales/_assets/css"
+js:      "/wales/_assets/js"
 
 
 # Build settings
 markdown: kramdown
 exclude: [node_modules, gulpfile.js, package.json, package-lock.json, js/script.js]
-keep_files: [js/scripts.min.js]
+keep_files: [_assets]
 sass:
     sass_dir: css
     style: compressed

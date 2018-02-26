@@ -1,0 +1,13 @@
+
+<div class="page-nav__container">
+  <div class="page-nav__offset"></div>
+  <div class="page-nav">
+    <div class="page-nav__wrap">
+      {% for nav-item in page.sections %}
+      <span class="page-nav__item">
+        <a class="page-nav__link" href="#{{nav-item.id}}">{{nav-item.title}}</a>
+      </span>
+      {% endfor %}
+    </div>
+  </div>
+</div>

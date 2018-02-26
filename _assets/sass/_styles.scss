@@ -1,0 +1,57 @@
+// general styles for the project that wouldn't be a reuseable component
+
+
+.highlight {
+
+  &__title {
+    display: inline;
+    position: relative;
+    padding: 0 .2em;
+    background-color: rgba($black,0.5);
+    color: $w-purple;
+    .page--adventure & { color: $w-green; }
+    .page--culture &   { color: $w-purple; }
+    .page--food &      { color: $w-beige; }
+  }
+
+  &__footer {
+    margin-top: 1em;
+    border-top: 1px solid rgba($white,0.25);
+    overflow: hidden;
+  }
+  &__cta {
+    float: right;
+    border-color: rgba($white,0.25);
+    border-top: 0;
+    border-radius: 0 0 3px 3px;
+  }
+  &__location {
+    padding: 0.3em 0;
+    float: left;
+
+    margin-top: .9em;
+    margin-left: 1.5em;
+    margin-bottom: 1.15em;
+    text-indent: -1.5em;
+    font-size: 0.75em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1.5em;
+      width: 1.05em;
+      margin-right: .5em;
+      margin-bottom: .2em;
+      vertical-align: middle;
+      background-image: url( "../img/icons/map-pin-white.svg" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+    }
+  }
+
+}

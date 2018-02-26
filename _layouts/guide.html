@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+
+
+<section class="bg--darker">
+  <div class="container container--xxl vpad--xl text--center">
+    <p class="text--lg">{{page.intro}}</p>
+  </div>
+
+  {% if page.sections.size > 1 %}
+    {% include nav/page.html %}
+  {% endif %}
+</section>
+
+
+
+{% for topic in page.sections %}
+<section class="wp-section vpad--xxl {% cycle 'bg--dark', 'bg--darker'%}">
+  <div class="wp" id="{{topic.id}}"></div>
+
+  <div class="container container--xl">
+    <div class="text--center">
+      <h2 class="title title--xl text--italic text--bolder">{{topic.title}}</h2>
+      <p class="text--lg">{{topic.intro}}</p>
+    </div>
+  </div>
+
+  <div class="container">
+    {% assign lg-highlights = topic.highlights | where: 'large','true' %}
+    {% if lg-highlights.size > 0 %}
+      {% for highlight in lg-highlights %}
+        {% include page/highlight-lg.html %}
+      {% endfor %}
+    {% endif %}
+
+    {% assign highlights = topic.highlights %}
+    {% if highlights.size > 0 %}
+    <div class="row row--6-6 row--gutters">
+      {% for highlight in topic.highlights %}
+      {% unless highlight.large %}
+        {% include page/highlight.html %}
+      {% endunless %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+  </div>
+
+  <div class="space--lg"></div>
+  <div class="text--center">
+    <a href="{{topic.link}}" class="btn btn--lg btn--red">{{topic.cta}}</a>
+  </div>
+
+</section>
+{% endfor %}
+
+
+
+
+{% include page/competition-banner.html %}

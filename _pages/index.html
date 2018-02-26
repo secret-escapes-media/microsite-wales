@@ -1,78 +1,51 @@
 ---
-layout: standard
+layout: default
 id: overview
-title: Overview
+title: Übersicht
+nav: true
 nav-order: 1
 
-
-
-banner:
-  content: >
-    <h1 class="title title--banner title--banner-size">Wales</h1>
-    <div class="title title--02 title--md">Discover a land of legends this autumn</div>
-
-
-
 intro: >
-  <p class="text--lg">Wales is the stuff of legends.</p>
-  <p class="text--lg">Craggy peaks and wild weather, ruined castles clinging to precarious summits, folk tales and new writers – Wales is a landscape of drama, irresistible romance, and superlative escapes. Autumn provides a colourful backdrop to your outdoor adventures, framed by shades of copper and maroon, inviting wistful walks and time spent in cosy rural pubs. New perspectives are waiting to be discovered, in a country constantly reinventing coveted classics. Seek out foodie treats, tear down steep slopes on a mountainbike, or unpick a rugged coastline of ravishing beauty. Meet the people of Wales that make all of this possible, the everyday heroes that ensure each traveller leaves itching to return to this unforgettable land.</p>
-  <p class="text--lg">Start your Wales wanderlust this autumn, here.</p>
-
-
-
-topics:
-
-  - title: Epic Experiences
-    image-credit: © Crown copyright (2016) Visit Wales
-    description: From the Black Mountains to the wilds of Snowdonia, Wales offers nothing short of breathtaking landscapes. Intrepid adventurers will delight in hurtling down crags on mountain bikes, diving off sheer cliffs into bitterly cold ocean, climbing steep slopes for stunning panorama, or ziplining across sublime Welsh valleys. Your adrenaline rush starts here.
-    link: 'a-new-perspective'
-    link-text: Discover More
-
-  - title: A Welsh Craft
-    image-credit: © Crown copyright (2016) Visit Wales
-    description: Schoolboys crafting superlative chocolate, renowned chefs reinventing the possibilities of the Welsh larder, a Brad and a Gazz making renowned craft beer – the Welsh sure know how to push the boundaries of fine fare. It’s long made Wales a world-class foodie destination – discover your own delectable delicacies here.
-    link: 'a-new-perspective'
-    link-text: Discover More
-
-  - title: Tall Tales
-    description: From King Arthur to Under Milk Wood, Wales is teeming with whispers of stoic knights and tight-knit valley communities. A rugged landscape that has inspired fantasies and dramas, romances and epics, and a literary heritage that stretches back to the time of Llywelyn the Great, all culminate in a contemporary Wales that is alive with a fiercely enigmatic cultural landscape.
-    link: 'legends'
-    link-text: Discover More
+  Croeso i Gymru – willkommen in Wales! 2018 feiert Wales mit dem „Jahr des Meeres" seine atemberaubende Küste mit ihren hunderten Sandstränden und versteckten Buchten, den kleinen und großen Inseln, malerischen Fischerhäfen, viktorianischen Seebädern und nicht zuletzt dem 1.400 km langen Wales Coast Path, dem ersten und längsten Wanderweg der Welt, der die gesamte Küste eines Landes entlang verläuft. Aber auch die Ufer der vielen Gebirgs- und Stauseen, die schmalen Bächlein und gurgelnden Flüsse im Landesinneren sind Teil dieses Festes. Entdecken Sie die Magie und Mystik dieses urwüchsigen Landes auch bei Aktivitäten wie Kajak fahren, Reiten, Surfen oder Wandern und feiern Sie mit. Wales bewegt.
 
 ---
 
-<div class="section">
-  <div class="row row--padding row--xl text--center">
-    {{page.intro}}
+
+
+<section class="bg--darker">
+  <div class="container container--xxl vpad--xl text--center">
+    <p class="text--lg">{{page.intro}}</p>
   </div>
-</div>
+</section>
 
-<div class="section bg--grey">
-  <div class="row row--padding">
-    {% assign page-topics = page.topics %}
-    {% for topic in page-topics %}
-      <div class="bob">
 
-        <div class="bob__image">
-          <a href="{{site.baseurl}}/{{topic.link}}">
-            <div class="bg-img bg-img--4-3 bg-img--rounded" style="background-image: url('{{site.baseurl}}/img/content/overview/{{topic.title|slugify}}.jpg');">
-              {% if topic.image-credit %}
-              <div class="bg-img__credit">
-                {{topic.image-credit}}
-              </div>
-              {% endif %}
-            </div>
-          </a>
-        </div>
 
-        <div class="bob__text line-length--lg">
-          <div class="title title--01 title--lg title--italic title--bolder">{{topic.title}}</div>
-          <p class="text--lg">{{topic.description}}</p>
-          <a href="{{site.baseurl}}/{{topic.link}}" class="btn btn--red">{{topic.link-text}}</a>
-        </div>
+<section class="bg--dark">
+  <div class="container vpad--xxl">
 
+    {% assign guidepages = site.html_pages | where:"content-pages","true" %}
+    {% for guidepage in guidepages %}
+    <div class="bob{% cycle "", " bob--swap" %}">
+      <div class="bob__img">
+        <a href="{{site.baseurl}}{{guidepage.url}}">
+          <div class="bg-img bg-img--3-2 bg-img--rounded" style="background-image: url('{{site.img}}/banner/{{guidepage.id}}-nav.jpg');"></div>
+        </a>
       </div>
+      <div class="bob__text">
+        <h3 class="title title--sm text--bolder text--italic">{{guidepage.overview-title}}</h3>
+        <p class="text--lg">{{guidepage.overview-intro}}</p>
+        <p>
+          <a href="{{site.baseurl}}{{guidepage.url}}" class="btn btn--red btn--solid">{{guidepage.overview-cta}}</a>
+        </p>
+      </div>
+    </div>
     {% endfor %}
+
   </div>
-  <div class="space--lg"></div>
-</div>
+</section>
+
+
+
+{% include page/competition-banner.html %}
+
+
