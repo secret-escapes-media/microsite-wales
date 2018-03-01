@@ -38,4 +38,19 @@
     @include transition;
   }
   &:hover &__bg-overlay { background-color: rgba($black,.6); }
+
+  &__caption {
+    @include transition();
+    position: absolute;
+    z-index: $z-content-upper;
+    padding: .3em .5em;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 3px;
+    font-size: .8em;
+    opacity: 0.5;
+    background-color: rgba($black,0.9);
+    color: $white;
+  }
+  &:hover &__caption { opacity: 0.8; }
 }

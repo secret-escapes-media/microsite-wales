@@ -4,14 +4,6 @@
 .highlight {
 
   &__title {
-    display: inline;
-    position: relative;
-    padding: 0 .2em;
-    background-color: rgba($black,0.5);
-    color: $w-purple;
-    .page--adventure & { color: $w-green; }
-    .page--culture &   { color: $w-purple; }
-    .page--food &      { color: $w-beige; }
   }
 
   &__footer {
@@ -54,4 +46,37 @@
     }
   }
 
+}
+
+
+
+.comp-logos {
+
+}
+.comp-logo {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  width: 80px;
+  & + & { margin-left: 30px; }
+  @include bp($lg) { width: 150px; }
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+  }
+  &--nikon {
+    background-image: url('../img/logo/nikon.svg');
+    width: 50px;
+    @include bp($lg) { width: 70px; }
+    &:before { padding-top: 100%; }
+  }
+  &--wales {
+    background-image: url('../img/logo/wales.svg');
+    width: 100px;
+    @include bp($lg) { width: 140px; }
+    &:before { padding-top: 40%; }
+  }
 }

@@ -12,6 +12,9 @@
   border-radius: 3px;
   cursor: pointer;
   @include transition;
+
+  & + & { margin-left: 10px; }  
+
   &--sm { padding: $s1 $s4; font-size: $s-2; }
   &--lg { padding: $s3 $s8; font-size: $s-1; }
   &--orange { background-color: $orange;
@@ -42,6 +45,14 @@
       &:hover {
         color: $w-red;
         background-color: $white;
+      }
+    }
+    &-red {
+      color: $white;
+      border: 1px solid $w-red;
+      &:hover {
+        color: $white;
+        background-color: $w-red;
       }
     }
   }

@@ -5,6 +5,14 @@ title: Übersicht
 nav: true
 nav-order: 1
 
+
+
+banner:
+  title: Das ist Wales
+  title-sub: "Entdecken Sie sagenhafte Küstenlandschaft, Natur, Leute & Orte"
+
+
+
 intro: >
   Croeso i Gymru – willkommen in Wales! 2018 feiert Wales mit dem „Jahr des Meeres" seine atemberaubende Küste mit ihren hunderten Sandstränden und versteckten Buchten, den kleinen und großen Inseln, malerischen Fischerhäfen, viktorianischen Seebädern und nicht zuletzt dem 1.400 km langen Wales Coast Path, dem ersten und längsten Wanderweg der Welt, der die gesamte Küste eines Landes entlang verläuft. Aber auch die Ufer der vielen Gebirgs- und Stauseen, die schmalen Bächlein und gurgelnden Flüsse im Landesinneren sind Teil dieses Festes. Entdecken Sie die Magie und Mystik dieses urwüchsigen Landes auch bei Aktivitäten wie Kajak fahren, Reiten, Surfen oder Wandern und feiern Sie mit. Wales bewegt.
 
@@ -28,7 +36,11 @@ intro: >
     <div class="bob{% cycle "", " bob--swap" %}">
       <div class="bob__img">
         <a href="{{site.baseurl}}{{guidepage.url}}">
-          <div class="bg-img bg-img--3-2 bg-img--rounded" style="background-image: url('{{site.img}}/banner/{{guidepage.id}}-nav.jpg');"></div>
+          <div class="bg-img bg-img--3-2 bg-img--rounded" style="background-image: url('{{site.img}}/banner/{{guidepage.id}}-nav.jpg');">
+            {% if guidepage.overview-image-caption %}
+            <div class="bg-img__caption">{{guidepage.overview-image-caption}}</div>
+            {% endif %}
+          </div>
         </a>
       </div>
       <div class="bob__text">

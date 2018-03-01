@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    text-shadow: 0 0 60px rgba($grey-darkest,0.5);
+    text-shadow: 0 0 60px rgba($grey-darkest,0.75);
     @include page-padding;
   }
   &__bg {
