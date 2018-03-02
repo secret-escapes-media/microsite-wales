@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/wales" # the subpath of your site, e.g. /blog/
-img:     "/wales/_assets/img"
-css:     "/wales/_assets/css"
-js:      "/wales/_assets/js"
+baseurl: "/de/wales" # the subpath of your site, e.g. /blog/
+img:     "/de/wales/_assets/img"
+css:     "/de/wales/_assets/css"
+js:      "/de/wales/_assets/js"
 
 
 # Build settings
