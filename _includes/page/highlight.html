@@ -1,7 +1,11 @@
 
 <div class="col">
 
-  <div class="bg-img bg-img--16-9 bg--rounded" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.title||slugify}}.jpg);"></div>
+  <div class="bg-img bg-img--16-9 bg--rounded" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.title||slugify}}.jpg);">
+    {% if highlight.image-caption %}
+      <div class="bg-img__caption">{{highlight.image-caption}}</div>
+    {% endif %}
+  </div>
 
   <div class="space--sm"></div>
 

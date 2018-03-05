@@ -12,11 +12,13 @@
     }
     &-sm {
       max-width: 120px;
-      padding-top: 2px;
+      & img { padding-top: 6px; }
     }
   }
-  &--partner { // max-width for this is about 150x46px
-    max-width: 120px;
-    &-sm { max-width: 100px; }
+  &--partner {
+    max-width: 105px;
+    &-sm {
+      max-width: 90px;
+    } 
   }
 }

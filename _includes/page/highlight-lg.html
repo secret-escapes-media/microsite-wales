@@ -2,7 +2,11 @@
 <div class="highlight row row--6-6 row--gutters row--valign-center {% cycle '','row--reverse' %}">
 
   <div class="col">
-    <div class="bg-img bg-img--16-9 bg-img--lg-4-3 bg-img--rounded" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.title||slugify}}.jpg);"></div>
+    <div class="bg-img bg-img--16-9 bg-img--lg-4-3 bg-img--rounded" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.title||slugify}}.jpg);">
+      {% if highlight.image-caption %}
+        <div class="bg-img__caption">{{highlight.image-caption}}</div>
+      {% endif %}
+    </div>
   </div>
 
   <div class="col">
