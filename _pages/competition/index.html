@@ -76,10 +76,10 @@ prizes:
       <div class="bob__text">
         <h3 class="title title--sm text--bolder text--italic">{{prize.title}}</h3>
         <p>{{prize.content}}</p>
+        <div class="space--sm"></div>
+        <a href="#enter" class="btn btn--sm btn--red">Jetzt teilnehmen</a>
         {% if prize.link %}
-          <div class="space--sm"></div>
-          <a href="#enter" class="btn btn--sm btn--red">Jetzt teilnehmen</a>
-          <a href="{{prize.link}}" class="btn btn--sm btn--outline-white">{{prize.cta-label}}</a>
+          <a href="{{prize.link}}" id="tracking-comp-{{prize.id}}-ext-btn" class="btn btn--sm btn--outline-white">{{prize.cta-label}}</a>
         {% endif %}
       </div>
     </div>
@@ -96,7 +96,7 @@ prizes:
 
     <h3 class="title title--sm text--bolder text--italic">Nehmen Sie jetzt am Gewinnpiel teil</h3>
     <div class="space--sm"></div>
-    <iframe src="https://news.secretescapes.de/wales-de-test/" width="540" height="520" frameborder="0" scrolling="no"></iframe>
+    <iframe id="competition-form" src="https://news.secretescapes.de/wales-de-test/" width="100%" height="520" frameborder="0" scrolling="no" frameBorder="0"></iframe>
 
   </div>
 </section>

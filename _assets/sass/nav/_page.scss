@@ -61,6 +61,12 @@ $nav-color:          $grey-darker;
     @include bp($nav-width-bp){ display: none; }
   }
 
+  &__scroll-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    @include bp($nav-width-bp){ overflow: visible; }
+  }
+
   &__wrap {
     display: flex;
     justify-content: space-between;

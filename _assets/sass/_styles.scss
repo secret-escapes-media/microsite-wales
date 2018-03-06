@@ -80,3 +80,13 @@
     &:before { padding-top: 40%; }
   }
 }
+
+
+
+
+#competition-form {
+  width: 260px;
+  @include bp($lg) {
+    width: 600px;
+  }
+}
