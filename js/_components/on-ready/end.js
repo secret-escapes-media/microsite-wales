@@ -1,1 +1,0 @@
-});})(jQuery, this); // on ready end
