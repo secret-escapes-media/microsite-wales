@@ -1,6 +1,6 @@
 - title: Landpartie in Südwest-Wales
   id: landpartie-in-südwest-wales
-  location: Lamphey Court Hotel & Spa, Lamphey, Pembrokeshire, Wales, Großbritannien
+  location: Lamphey Court Hotel & Spa, Lamphey, Pembrokeshire
   description: Landhaus-Charme am schönsten Küstenabschnitt von Wales – inkl. English Breakfast & optional 1x Dinner
   price: 77
   price-description: pro Zimmer pro Nacht
@@ -9,20 +9,9 @@
 
 
 
-- title: Charmanter Landgasthof in den grünen Hügeln von Nord-Wales
-  id: charmanter-landgasthof-in-den-grünen-hügeln-von-nord-wales
-  location: The Mulberry Inn, Llwynmawr, Denbighshire, Wales, Großbritannien
-  description: Entspannte Tage inmitten unberührter Natur – inkl. Frühstück oder Halbpension
-  price: 78
-  price-description: pro Zimmer pro Nacht
-  saved: 44
-  link: https://goo.gl/4wpV7T
-
-
-
 - title: Naturspektakel zwischen Bergen & Strand in Nord-Wales
   id: naturspektakel-zwischen-bergen-strand-in-nord-wales
-  location: Macdonald Plas Talgarth Resort, Pennal, Snowdonia, Wales, Großbritannien
+  location: Macdonald Plas Talgarth Resort, Pennal, Snowdonia
   description: Gemütliches Apartment umgeben von urwüchsiger Natur – inkl. Halbpension oder Frühstück
   price: 95
   price-description: pro Apartment pro Nacht
@@ -33,7 +22,7 @@
 
 - title: Südwest-Wales zwischen Küstenschönheit und grünen Hügeln
   id: südwest-wales-zwischen-küstenschönheit-und-grünen-hügeln
-  location: Hotel Plas Hyfryd, Narberth, Pembrokeshire, Wales, Großbritannien
+  location: Hotel Plas Hyfryd, Narberth, Pembrokeshire
   description: Idyllisch gelegenes Landhotel in Südwest-Wales – inkl. Welsh Breakfast
   price: 98
   price-description: pro Zimmer pro Nacht
