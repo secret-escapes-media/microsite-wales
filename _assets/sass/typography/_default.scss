@@ -12,18 +12,11 @@ body {
   font-family: $font-core;
   -webkit-text-size-adjust: 100%;
 
-  // light theme
+  // dark theme
   font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: .015rem;
-  color: $grey-dark;
-  background-color: $white;
-
-  // // dark theme
-  // font-weight: 300;
-  // color: $grey-lighter;
-  // background-color: $grey-darkest;
-  // line-height: 1.6;
-  // letter-spacing: .02rem;
+  color: $grey-lightest;
+  background-color: $w-grey-dark;
+  line-height: 1.6;
+  letter-spacing: .02rem;
 
 }

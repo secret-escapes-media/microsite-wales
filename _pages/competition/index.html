@@ -4,56 +4,82 @@ id: competition
 title: Compet&shy;ition
 nav: true
 nav-order: 7
+intro: It’s time to decide whether you want to win a luxurious stay overlooking the coast, or win an opulent break in the Welsh interior with a picturesque lakeside hotel. For the Wales Year of the Sea, we’ve picked the best spots next to beautiful waterways, plus activities designed for splendid aquatic adventures.
 
 banner:
   content: >
     <div class="container container--xxl text--center">
-      <h1 class="title title--xxl text--upper text--wide-kern">You could win this amazing prize</h1>
+      <h1 class="banner-title banner-title--sm">Win a luxurious waterside break in Wales</h1>
       <div class="space--md"></div>
-      <a href="#entry-form" class="btn btn--lg btn--orange">Enter Now</a>
+      <a href="#entry-form" class="btn btn--lg btn--red">Enter Now</a>
     </div>
+
+prizes:
+
+  - id: coast
+    title: Contemporary Seaside
+    hotel: St Brides Spa Hotel
+    content-rows:
+      - content: Look out over Saundersfoot Bay from this chic, contemporary base with state-of-the-art amenities that make for a truly tranquil stay. Two nights with breakfast await, with spa sessions included to help revitalise and replenish. Lounge in the hydro infinity pool, for glorious views over the bay. Sea views from your room complete this stylish seaside escape.
+      - content: Try your hand at coasteering and brave the rugged coastline of Pembrokeshire. With your excellent guide, you’ll fling yourself into the sea and explore the craggy cliffs in search of hidden coves, underwater caves and enjoy true aquatic adventure.
+
+
+  - id: lake
+    title: Classic Lake
+    hotel: Lake Vyrnwy Hotel & Spa
+    content-rows:
+      - content: Win a two-night stay in this regal hotel next to the serene lake Vyrnwy. Relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, explore the wilds of Snowdonia and immerse yourself in nature, before acclaimed dining at Palé Hall. Lakeview rooms and isolated serenity frame this classic break.
+      - content: Take a canoe across the beautiful Lake Vyrnwy, soaking up the unique atmosphere of this spellbinding location. Moving at your own pace, glide across the still waters for a truly remarkable adventure in this famed beauty spot.
 ---
 
-<div class="container container--xl text--center text--lg space--xxxxl">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore illum saepe velit assumenda praesentium quo dolores dolorem maiores ducimus, aperiam laborum, eveniet nostrum quia? Deleniti nobis, quasi adipisci cumque quia ullam voluptatibus consectetur mollitia neque ea eius, accusamus dignissimos debitis maxime dolore culpa facilis reprehenderit totam fugiat necessitatibus? Velit, dolorem.</p>
-</div>
-
-<div class="container">
-  <div class="bob">
-    <div class="bob__img">
-      <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-    </div>
-    <div class="bob__text">
-      <div class="title title--md">Lorem ipsum dolor sit amet, consectetur.</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quam minus facere, sunt sed quaerat voluptatum fuga natus amet tempora, nesciunt dolorem fugit ipsam suscipit voluptate cupiditate obcaecati asperiores ipsum, animi dolores soluta recusandae fugiat veritatis! Adipisci numquam, corrupti temporibus!</p>
-    </div>
-  </div>
-  <div class="bob bob--swap">
-    <div class="bob__img">
-      <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-    </div>
-    <div class="bob__text">
-      <div class="title title--md">Nobis maxime sequi qui voluptas dolorum!</div>
-      <p>Quia, debitis, itaque. Quas, voluptates, dolore. Placeat sint culpa, delectus quidem. Earum excepturi repellat adipisci fugiat animi quibusdam iure ea rem asperiores odio aliquid vero expedita inventore accusamus dolor exercitationem, non magni eveniet! Velit possimus culpa perferendis beatae facere praesentium.</p>
-    </div>
-  </div>
-  <div class="bob">
-    <div class="bob__img">
-      <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-    </div>
-    <div class="bob__text">
-      <div class="title title--md">Beatae officiis facilis doloremque animi illum.</div>
-      <p>Nesciunt consectetur maxime possimus accusamus est, eius earum deserunt omnis modi distinctio? Facere dolorum, deserunt quidem tempore dolore ad, labore qui praesentium et nihil, neque quasi! Voluptatum magnam sapiente earum aut officiis, atque iusto, totam. Necessitatibus iste eius obcaecati perspiciatis.</p>
-    </div>
+<div class="bg--dark">
+  <div class="container container--xl text--center text--lg vpad--xxl">
+    <p>{{page.intro}}</p>
   </div>
 </div>
 
-<div class="space--xxxl"></div>
+<div class="container vpad--xxl">
+  <h2 class="title title--lg text--center">Choose your prize</h2>
+  <div class="space--lg"></div>
+  <div class="row row--xl-6-6 row--gutters-xl">
+    {% for prize in page.prizes %}
+      <div class="col text--center">
+        <div class="bg-img bg-img--3-2 prize-number__offset" style="background-image: url('{{site.img}}/competition/{{prize.id}}-01.jpg');">
+          <div class="prize-number">{{forloop.index}}</div>
+        </div>
+        <div class="row row--constant-6-6 row--no-gutters">
+          <div class="col">
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/competition/{{prize.id}}-02.jpg');"></div>
+          </div>
+          <div class="col">
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/competition/{{prize.id}}-03.jpg');"></div>
+          </div>
+        </div>
 
-<div id="entry-form" class="bg--light vpad--xxl">
+        <!-- <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/competition/{{prize.id}}.jpg');">
+          <div class="bg-img__content">
+            <div class="prize-number">{{forloop.index}}</div>
+          </div>
+        </div> -->
+
+        <div class="space--lg"></div>
+        <h2 class="sub-title sub-title--lg">{{prize.title}}</h2>
+        <div class="space--xxs"></div>
+        <div class="sub-title sub-title--sm">{{prize.hotel}}</div>
+        <div class="space--xxs"></div>
+        {% for description in prize.content-rows %}
+          <p>{{description.content}}</p>
+        {% endfor %}
+
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div id="entry-form" class="bg--dark vpad--xxl">
   <div class="container container--xxl text--center">
     <h3 class="title title--md">Enter below for your chance to win</h3>
     <div class="space--lg"></div>
-    <iframe src="https://promotion4489.strutta.me" width="100%" height="650"></iframe>
+    <iframe src="https://promotion4676.strutta.me" width="100%" height="650"></iframe>
   </div>
 </div>

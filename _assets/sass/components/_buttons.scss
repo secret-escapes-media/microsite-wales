@@ -17,7 +17,10 @@
   &--orange { background-color: $orange;
     &:hover { background-color: $orange-dark; }
   }
-  &--orange-outline {
+  &--red { background-color: $w-red;
+    &:hover { background-color: $w-red-dark; }
+  }
+  &--outline {
     color: inherit;
     &:before {
       // button border within original padding
@@ -29,10 +32,18 @@
       bottom: 0;
       border: 1px solid $orange;
       border-radius: inherit;
+      @include transition;
     }
     &:hover {
       color: $white;
       background-color: $orange;
     }
+  }
+  &--outline-red {
+    &:before { border-color: $white; }
+    &:hover {
+      background-color: $w-red;
+      &:before { border-color: $w-red; }
+     }
   }
 }

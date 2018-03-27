@@ -4,13 +4,14 @@
 
   // custom content headline
   font-family: $font-title-01;
-  font-weight: 200;
+  font-weight: 700;
+  font-style: italic;
   @include font-smoothing;
 
   &--xxxl   { font-size: $s8; line-height: 1.033; }
   &--xxl    { font-size: $s7; line-height: 1.075; }
-  &--xl     { font-size: $s6; line-height: 1.15; }
-  &--lg     { font-size: $s5; line-height: 1.25; }
+  &--xl     { font-size: $s6; line-height: 1.1; }
+  &--lg     { font-size: $s5; line-height: 1.2; }
   &--md     { font-size: $s4; line-height: 1.325; }
   &--sm     { font-size: $s3; line-height: 1.35; }
   &--xs     { font-size: $s2; line-height: 1.35; }
@@ -33,21 +34,21 @@
 .sub-title {
 
   // custom content headline
-  font-family: $font-title-01;
-  font-weight: 600;
+  font-family: $font-title-02;
+  font-weight: 400;
   line-height: 1.2;
-  text-transform: uppercase;
-  letter-spacing: .33rem;
   @include font-smoothing;
 
-  font-size: $s2; // default size
-  &--lg     { font-size: $s4; }
-  &--sm     { font-size: $s0; }
-  @include bp($lg){
-    font-size: $s3; // default size
+  font-size: $s4;
+
+  // font-size: $s2; // default size
+  // &--lg     { font-size: $s4; }
+  // &--sm     { font-size: $s0; }
+  // @include bp($lg){
+  //   font-size: $s3; // default size
     &--lg     { font-size: $s5; }
-    &--sm     { font-size: $s1; }
-  }
+    &--sm     { font-size: $s2; }
+  // }
 
 }
 
@@ -57,6 +58,7 @@
   // open-sans – core site typeface
   font-family: $font-core;
   font-weight: 200;
+  letter-spacing: -.025em;
   @include font-smoothing;
 
   &--xxxl   { font-size: $s8; line-height: 1.1; }
@@ -82,25 +84,40 @@
 
 }
 
+.core-sub-title {
+  // open-sans – core site typeface
+  font-family: $font-core;
+  font-size: $s1;
+  font-weight: 700;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  @include font-smoothing;
+}
+
 
 .banner-title {
 
   // custom banner headline
   font-family: $font-title-01;
-  font-weight: 200;
-  line-height: 1.2;
-  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  font-size: $s14;
+  line-height: 1.05;
   @include font-smoothing;
 
-  font-size: $s5;
-  letter-spacing: .5rem;
-  @include bp($md){
-    letter-spacing: 1rem;
-    font-size: $s7;
+  &--sm {
+    font-size: $s9;
   }
-  @include bp($xl){
-    letter-spacing: 2rem;
-    font-size: $s10;
-  }
+
+  // font-size: $s5;
+  // letter-spacing: .5rem;
+  // @include bp($md){
+    // letter-spacing: 1rem;
+    // font-size: $s7;
+  // }
+  // @include bp($xl){
+    // letter-spacing: 2rem;
+    // font-size: $s14;
+  // }
 
 }

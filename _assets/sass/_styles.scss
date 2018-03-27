@@ -1,1 +1,24 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.promo-comp-content-width { max-width: 460px; }
+
+$prize-number-size: 80px;
+.prize-number {
+  position: absolute;
+  top: -($prize-number-size/2);
+  left: 50%;
+  display: inline-block;
+  height: $prize-number-size;
+  width: $prize-number-size;
+  margin-left: -($prize-number-size/2);
+  color: $white;
+  font-size: $s6;
+  font-weight: 400;
+  line-height: $prize-number-size;
+  text-align: center;
+  background-color: $w-red;
+  border-radius: 999999em;
+  &__offset {
+    margin-top: ($prize-number-size/2);
+  }
+}

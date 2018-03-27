@@ -143,6 +143,8 @@ $offer-max-width: 600px;
      border-bottom: 0;
      background-color: lighten($grey-darkest,4);
    }
-   &#{&}--dark &__separator { background-color: $grey-dark; }
+   &#{&}--dark &__separator           { background-color: $grey-dark; }
+   &#{&}--dark &__location            { color: $grey-lighter;}
+   &#{&}--dark &__content .core-title { color: $white;}
 
 }
