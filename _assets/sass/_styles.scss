@@ -2,7 +2,7 @@
 
 .promo-comp-content-width { max-width: 460px; }
 
-$prize-number-size: 80px;
+$prize-number-size: 60px;
 .prize-number {
   position: absolute;
   top: -($prize-number-size/2);
@@ -12,13 +12,21 @@ $prize-number-size: 80px;
   width: $prize-number-size;
   margin-left: -($prize-number-size/2);
   color: $white;
-  font-size: $s6;
+  font-size: $s5;
   font-weight: 400;
   line-height: $prize-number-size;
   text-align: center;
   background-color: $w-red;
   border-radius: 999999em;
-  &__offset {
-    margin-top: ($prize-number-size/2);
+  &__offset { margin-top: ($prize-number-size/2); }
+  @include bp($lg){
+    $prize-number-size: 80px;
+    top: -($prize-number-size/2);
+    height: $prize-number-size;
+    width: $prize-number-size;
+    margin-left: -($prize-number-size/2);
+    font-size: $s6;
+    line-height: $prize-number-size;
+    &__offset { margin-top: ($prize-number-size/2); }
   }
 }

@@ -44,23 +44,17 @@ prizes:
   <div class="row row--xl-6-6 row--gutters-xl">
     {% for prize in page.prizes %}
       <div class="col text--center">
-        <div class="bg-img bg-img--3-2 prize-number__offset" style="background-image: url('{{site.img}}/competition/{{prize.id}}-01.jpg');">
+        <div class="bg-img bg-img--3-2 prize-number__offset" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/01.jpg');">
           <div class="prize-number">{{forloop.index}}</div>
         </div>
         <div class="row row--constant-6-6 row--no-gutters">
           <div class="col">
-            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/competition/{{prize.id}}-02.jpg');"></div>
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/02.jpg');"></div>
           </div>
           <div class="col">
-            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/competition/{{prize.id}}-03.jpg');"></div>
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/03.jpg');"></div>
           </div>
         </div>
-
-        <!-- <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/competition/{{prize.id}}.jpg');">
-          <div class="bg-img__content">
-            <div class="prize-number">{{forloop.index}}</div>
-          </div>
-        </div> -->
 
         <div class="space--lg"></div>
         <h2 class="sub-title sub-title--lg">{{prize.title}}</h2>
