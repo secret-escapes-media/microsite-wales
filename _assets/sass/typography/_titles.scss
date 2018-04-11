@@ -37,18 +37,19 @@
   // custom content headline
   font-family: $font-title-02;
   font-weight: 400;
-  line-height: 1.33;
+  line-height: 1.25;
   @include font-smoothing;
 
-  font-size: $s4;
+  font-size: $s2;
+  @include bp($lg){ font-size: $s4; }
 
   // font-size: $s2; // default size
   // &--lg     { font-size: $s4; }
   // &--sm     { font-size: $s0; }
   // @include bp($lg){
   //   font-size: $s3; // default size
-    &--lg     { font-size: $s5; }
-    &--sm     { font-size: $s2; }
+    &--lg { font-size: $s5; }
+    &--sm { font-size: $s2; }
   // }
 
 }
@@ -103,7 +104,7 @@
   font-weight: 900;
   font-style: italic;
   font-size: $s14;
-  line-height: 1.05;
+  line-height: 1;
   @include font-smoothing;
 
   font-size: $s10;
