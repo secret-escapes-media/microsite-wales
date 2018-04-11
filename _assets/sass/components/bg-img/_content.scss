@@ -34,8 +34,32 @@
     right: 0;
     bottom: 0;
     z-index: $z-content;
-    background-color: rgba($black,.4);
+    background-color: rgba($grey-darkest,.4);
     @include transition;
   }
   &:hover &__bg-overlay { background-color: rgba($black,.6); }
+  &__credit{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: $s-1;
+    font-size: $s-2;
+    line-height: 1;
+    color: rgba($white,.75);
+    background-color: rgba($grey-darkest,.5);
+    @include transition;
+    .touch & {
+      color: $white;
+      background-color: rgba($grey-darkest,.66);
+    }
+    &--sm {
+      padding: $s-2;
+      font-size: $s-3;
+    }
+  }
+  &:hover &__credit {
+    // text appears on hover
+    color: $white;
+    background-color: rgba($grey-darkest,.66);
+  }
 }

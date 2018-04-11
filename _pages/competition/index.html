@@ -30,6 +30,10 @@ prizes:
     content-rows:
       - content: Win a two-night stay in this regal hotel next to the serene lake Vyrnwy. Relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, explore the wilds of Snowdonia and immerse yourself in nature, before acclaimed dining at Palé Hall. Lakeview rooms and isolated serenity frame this classic break.
       - content: Take a canoe across the beautiful Lake Vyrnwy, soaking up the unique atmosphere of this spellbinding location. Moving at your own pace, glide across the still waters for a truly remarkable adventure in this famed beauty spot.
+
+
+footer-message: © Crown copyright (<span class="js-year">2018</span>) Visit Wales
+
 ---
 
 <div class="bg--dark">
@@ -52,7 +56,9 @@ prizes:
             <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/02.jpg');"></div>
           </div>
           <div class="col">
-            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/03.jpg');"></div>
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/03.jpg');">
+              {% if prize.id == "lake" %}<div class="bg-img__credit bg-img__credit--sm">© Crown copyright (<span class="js-year">2018</span>) Visit Wales</div>{% endif %}
+            </div>
           </div>
         </div>
 

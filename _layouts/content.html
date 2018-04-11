@@ -12,7 +12,9 @@ layout: default
   <div class="row row--6-6 row--gutters-lg">
     {% for poi in page.pois %}
       <div class="col">
-        <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{poi.id}}.jpg');"></div>
+        <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{poi.id}}.jpg');">
+          {% if poi.image-credit %}<div class="bg-img__credit">© Crown copyright (<span class="js-year">2018</span>) Visit Wales</div>{% endif %}
+        </div>
         <div class="space--md"></div>
         <div class="title title--md">{{poi.title}}</div>
         <p>{{poi.description}}</p>
