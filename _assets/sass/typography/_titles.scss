@@ -6,17 +6,18 @@
   font-family: $font-title-01;
   font-weight: 700;
   font-style: italic;
+  line-height: 1.1;
   @include font-smoothing;
 
-  &--xxxl   { font-size: $s8; line-height: 1.033; }
-  &--xxl    { font-size: $s7; line-height: 1.075; }
-  &--xl     { font-size: $s6; line-height: 1.1; }
-  &--lg     { font-size: $s5; line-height: 1.2; }
-  &--md     { font-size: $s4; line-height: 1.325; }
-  &--sm     { font-size: $s3; line-height: 1.35; }
-  &--xs     { font-size: $s2; line-height: 1.35; }
-  &--xxs    { font-size: $s1; line-height: 1.4; }
-  &--xxxs   { font-size: $s0; line-height: 1.45; }
+  &--xxxl   { font-size: $s8; }
+  &--xxl    { font-size: $s7; }
+  &--xl     { font-size: $s6; }
+  &--lg     { font-size: $s5; }
+  &--md     { font-size: $s4; }
+  &--sm     { font-size: $s3; }
+  &--xs     { font-size: $s2; }
+  &--xxs    { font-size: $s1; }
+  &--xxxs   { font-size: $s0; }
   @include bp($lg){
     &--xxxl   { font-size: $s9; }
     &--xxl    { font-size: $s8; }
@@ -36,18 +37,19 @@
   // custom content headline
   font-family: $font-title-02;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.25;
   @include font-smoothing;
 
-  font-size: $s4;
+  font-size: $s2;
+  @include bp($lg){ font-size: $s4; }
 
   // font-size: $s2; // default size
   // &--lg     { font-size: $s4; }
   // &--sm     { font-size: $s0; }
   // @include bp($lg){
   //   font-size: $s3; // default size
-    &--lg     { font-size: $s5; }
-    &--sm     { font-size: $s2; }
+    &--lg { font-size: $s5; }
+    &--sm { font-size: $s2; }
   // }
 
 }
@@ -102,22 +104,21 @@
   font-weight: 900;
   font-style: italic;
   font-size: $s14;
-  line-height: 1.05;
+  line-height: 1;
   @include font-smoothing;
 
-  &--sm {
-    font-size: $s9;
-  }
+  font-size: $s10;
+  @include bp($sm){ font-size: $s11; }
+  @include bp($md){ font-size: $s12; }
+  @include bp($lg){ font-size: $s13; }
+  @include bp($xl){ font-size: $s14; }
 
-  // font-size: $s5;
-  // letter-spacing: .5rem;
-  // @include bp($md){
-    // letter-spacing: 1rem;
-    // font-size: $s7;
-  // }
-  // @include bp($xl){
-    // letter-spacing: 2rem;
-    // font-size: $s14;
-  // }
+  &--sm {
+    font-size: $s6;
+    font-weight: 700;
+    @include bp($sm){ font-size: $s7; }
+    @include bp($md){ font-size: $s8; }
+    @include bp($lg){ font-size: $s9; }
+  }
 
 }
