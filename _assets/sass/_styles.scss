@@ -30,3 +30,25 @@ $prize-number-size: 60px;
     &__offset { margin-top: ($prize-number-size/2); }
   }
 }
+
+.expert-avatar {
+  display: block;
+  position: relative;
+  @include background-attributes();
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+  max-width: 220px;
+  max-height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 999999em;
+  background-color: $grey-lighter;
+  &--sm {
+    max-width: 120px;
+    max-height: 120px;
+  }
+}

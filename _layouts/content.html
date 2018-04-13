@@ -3,8 +3,21 @@ layout: default
 ---
 
 <div class="bg--dark vpad--xxl">
-  <div class="container container--lg text--center">
-    <p class="sub-title sub-title--sm">{{page.page-intro}}</p>
+  <div class="container container--lg">
+    <p class="sub-title sub-title--sm text--center">{{page.page-intro}}</p>
+    <div class="space--xl"></div>
+    <div class="row row--valign-center">
+      <div class="col col--3">
+        <div class="expert-avatar expert-avatar--sm" style="background-image: url('{{site.img}}/content/{{page.id}}/{{page.expert.id}}.jpg');">
+          <a class="js-open-modal bg-img__link" data-open-modal="expert"></a>
+        </div>
+      </div>
+      <div class="col col--9 text--center text--bp-left">
+        <p>{{page.expert.description}}</p>
+        <div class="space--sm"></div>
+        <a class="js-open-modal btn btn--sm btn--outline btn--outline-red" data-open-modal="expert">Read their interview</a>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -18,3 +18,36 @@
 #
 #
 #####################################
+
+
+- id: expert
+  pages:
+    - id: coastal
+    - id: inland
+  content: >
+    <div class="row row--valign-center">
+      <div class="col col--xl-4">
+        <div class="expert-avatar" style="background-image: url('{{site.img}}/content/{{page.id}}/{{page.expert.id}}.jpg');"></div>
+      </div>
+      <div class="col col--xl-8">
+        <div class="title title--lg">{{page.expert.name}}</div>
+        <div class="space--xxs"></div>
+        <p>{{page.expert.description}}</p>
+      </div>
+    </div>
+    <div class="space--xl">
+        {% for question in page.expert.questions %}
+          {% if question.image %}
+            <div class="vpad--sm">
+              <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{question.image}}');"></div>
+            </div>
+            {% else %}
+            <div class="container container--lg container--no-padding">
+              <p class="text--bold">{{question.question}}</p>
+              <p>{{question.answer}}</p>
+            </div>
+          {% endif %}
+        <div class="space--sm"></div>
+        {% endfor %}
+      </div>
+    </div>
