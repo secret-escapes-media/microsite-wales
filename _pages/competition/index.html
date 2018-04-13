@@ -8,7 +8,7 @@ intro: It’s time to decide whether you want to win a luxurious stay overlookin
 
 banner:
   content: >
-    <div class="container container--xxl text--center">
+    <div class="container container--xl text--center">
       <h1 class="banner-title banner-title--sm">Win a luxurious waterside break in Wales</h1>
       <div class="space--md"></div>
       <a href="#entry-form" class="btn btn--lg btn--red">Enter Now</a>
@@ -30,6 +30,10 @@ prizes:
     content-rows:
       - content: Win a two-night stay in this regal hotel next to the serene lake Vyrnwy. Relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, explore the wilds of Snowdonia and immerse yourself in nature, before acclaimed dining at Palé Hall. Lakeview rooms and isolated serenity frame this classic break.
       - content: Take a canoe across the beautiful Lake Vyrnwy, soaking up the unique atmosphere of this spellbinding location. Moving at your own pace, glide across the still waters for a truly remarkable adventure in this famed beauty spot.
+
+
+footer-message: © Crown copyright (<span class="js-year">2018</span>) Visit Wales
+
 ---
 
 <div class="bg--dark">
@@ -52,7 +56,9 @@ prizes:
             <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/02.jpg');"></div>
           </div>
           <div class="col">
-            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/03.jpg');"></div>
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/03.jpg');">
+              {% if prize.id == "lake" %}<div class="bg-img__credit bg-img__credit--sm">© Crown copyright (<span class="js-year">2018</span>) Visit Wales</div>{% endif %}
+            </div>
           </div>
         </div>
 
@@ -74,6 +80,6 @@ prizes:
   <div class="container container--xxl text--center">
     <h3 class="title title--md">Enter below for your chance to win</h3>
     <div class="space--lg"></div>
-    <iframe src="https://promotion4676.strutta.me" width="100%" height="650"></iframe>
+    <iframe src="https://promotion4676.strutta.me" width="100%" height="820"></iframe>
   </div>
 </div>
