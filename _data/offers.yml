@@ -1,41 +1,29 @@
-
-
-- title: Celtic Manor Resort
-  id: celtic-manor-resort
-  location: Newport, Wales
-  description: A luxury Welsh golf and spa stay with gourmet dining
-  price: 152
+- title: Lake Country House Hotel & Spa
+  id: lake-country-house-hotel-spa
+  location: Powys, Wales
+  description: A suite stay at an award-winning Welsh country hotel in Powys
+  price: 179
   price-description: per room per night
-  saved: 54
-  link: https://www.secretescapes.com/celtic-manor-resort-newport-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales_Dec2017
+  saved: 51
+  expires: 2018/04/14
+  link: https://www.secretescapes.com/lake-country-house-hotel-and-spa-powys-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
-
-- title: The Castle Hotel
-  id: the-castle-hotel
-  location: Conwy, North Wales
-  description: An old Welsh coaching inn within historic Conwy
-  price: 49
+- title: Ruthin Castle Hotel & Spa
+  id: ruthin-castle-hotel-spa
+  location: Ruthin, North Wales
+  description: A centuries-old castle with AA Rosette dining in North Wales
+  price: 99
   price-description: per room per night
-  saved: 57
-  link: https://www.secretescapes.com/the-castle-hotel-conwy-north-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales%20_Dec2017
+  saved: 42
+  expires: 2018/04/18
+  link: https://www.secretescapes.com/ruthin-castle-hotel-and-spa-ruthin-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
-
-- title: The Corran Resort & Spa
-  id: the-corran-resort-spa
-  location: Carmarthenshire, Wales
-  description: A stylish country spa retreat in Laugharne
-  price: 109
-  price-description: per suite per night
-  saved: 33
-  link: https://www.secretescapes.com/the-corran-resort-and-spa-carmarthenshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales%20_Dec2017
-
-
-- title: The Grove Narberth
-  id: the-grove-narberth
-  location: Pembrokeshire, Wales
-  description: A luxe hotel with acclaimed restaurant in rural Wales
-  price: 159
+- title: Hallmark Hotel Wrexham Llyndir Hall near Chester
+  id: hallmark-hotel-wrexham-llyndir-hall-near-chester
+  location: Rossett near Chester and Wrexham, Wales
+  description: A Welsh country hotel near Chester and Wrexham
+  price: 79
   price-description: per room per night
-  saved: 53
-  link: https://www.secretescapes.com/the-grove-narberth-pembrokeshire-wales/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Wales%20_Dec2017
-
+  saved: 47
+  expires: 2018/04/18
+  link: https://www.secretescapes.com/hallmark-hotel-llyndir-hall-rossett-near-chester-and-wrexham-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018

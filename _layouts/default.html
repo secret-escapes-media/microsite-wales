@@ -3,13 +3,21 @@
 
   {% include page/head.html %}
 
-  <body id="top" class="page--{{page.id}}{% if page.group %} group--{{page.group}}{% endif %}" data-current-page="{{page.id}}">
+  <body>
 
-    {% include page/tracking.html %}
+    {% include components/tracking.html %}
 
     {% include page/header.html %}
 
-    {{ content }}
+    {% include page/banner.html %}
+
+    <div class="content-spacing section-spacing">
+      {{ content }}
+    </div>
+
+    {% unless page.id == 'offers' or page.id == 'competition' %}
+      {% include page/promo-comp.html %}
+    {% endunless %}
 
     {% include page/footer.html %}
 

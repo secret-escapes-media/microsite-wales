@@ -1,91 +1,85 @@
 ---
-layout: standard
+layout: default
 id: competition
-title: Competition
-nav-order: 5
-
+title: Compet&shy;ition
+nav: true
+nav-order: 7
+intro: It’s time to decide whether you want to win a luxurious stay overlooking the coast, or win an opulent break in the Welsh interior with a picturesque lakeside hotel. For the Wales Year of the Sea, we’ve picked the best spots next to beautiful waterways, plus activities designed for splendid aquatic adventures.
 
 banner:
   content: >
-    <div class="row--xxl">
-      <h1 class="title title--banner title--banner-small">Win a perfect autumn break in Wales</h1>
-      <a href="#competition" class="btn btn--red">Enter Now</a>
+    <div class="container container--xl text--center">
+      <h1 class="banner-title banner-title--sm">Win a luxurious waterside break in Wales</h1>
+      <div class="space--md"></div>
+      <a href="#entry-form" class="btn btn--lg btn--red">Enter Now</a>
     </div>
 
+prizes:
 
-intro: >
-  <p class="text--lg">Win a break in a lakeside idyll, with a Canon EOS M6 mirrorless camera kit thrown in to capture those irresistible autumnal colours plus clothing from Cotswold Outdoor for a true autumnal adventure.</p>
-  <p class="text--lg">Win a two-night stay in the beautiful Welsh countryside, for an effortlessly rejuvenating autumnal treat. With a stay at the grand Lake Vyrnwy Hotel & Spa, you can relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, or head out into the wilderness with your Canon EOS M6 to capture the unique beauty of Autumn in Wales. Let Cotswold Outdoor kit you out for intrepid exploring in the wilds of Snowdonia and immerse yourself in nature.</p>
-  <p class="text--lg">This grand house offers traditional countryside charms, set in a beguiling location perfect for crisp autumnal walks. </p>
-  <a href="#competition" class="btn btn--red">Enter Now</a>
+  - id: coast
+    title: Contemporary Seaside
+    hotel: St Brides Spa Hotel
+    content-rows:
+      - content: Look out over Saundersfoot Bay from this chic, contemporary base with state-of-the-art amenities that make for a truly tranquil stay. Two nights with breakfast await, with spa sessions included to help revitalise and replenish. Lounge in the hydro infinity pool, for glorious views over the bay. Sea views from your room complete this stylish seaside escape.
+      - content: Try your hand at coasteering and brave the rugged coastline of Pembrokeshire. With your excellent guide, you’ll fling yourself into the sea and explore the craggy cliffs in search of hidden coves, underwater caves and enjoy true aquatic adventure.
 
 
-prize:
-  - title: The Hotel
-    description: >
-      <p>Enjoy a lakeview room for a truly wondrous stay. Each morning you’ll be treated to breakfast, with a day to rejuvenate in the hotel’s spa. Effortlessly romantic, the Lake Vyrnwy Hotel is the perfect rural escape.</p>
+  - id: lake
+    title: Classic Lake
+    hotel: Lake Vyrnwy Hotel & Spa
+    content-rows:
+      - content: Win a two-night stay in this regal hotel next to the serene lake Vyrnwy. Relax in the sublime Powys valleys with stunning lakeside views. Indulge in the hotel spa, explore the wilds of Snowdonia and immerse yourself in nature, before acclaimed dining at Palé Hall. Lakeview rooms and isolated serenity frame this classic break.
+      - content: Take a canoe across the beautiful Lake Vyrnwy, soaking up the unique atmosphere of this spellbinding location. Moving at your own pace, glide across the still waters for a truly remarkable adventure in this famed beauty spot.
 
-  - title: Fine Dining
-    description: >
-      <p>Enjoy dinner at the award-winning Palé Hall restaurant and sample the delectable Welsh larder, with seasonal produce all locally-sourced for an inspired foodie treat. À-la-carte offerings are bestowed with an AA 3 rosette rating, ensuring an outstanding culinary adventure.</p>
 
-  - title: Canon Camera Package
-    description: >
-      <p>The Canon EOS M6 camera is the perfect travel companion to join you on your travels, with a specially designed camera bag and two lenses to complete the package. A mirrorless camera offers the power and quality of a DSLR camera, but in a compact and lightweight body, making the EOS M6 perfect for capturing  your travel moments. Swap between the perfect all-rounder 15-45mm lens and the 55-200mm zoom lens to capture the perfect shot.</p>
-      <a id="tracking-btn-canon-prize" href="https://www.canon.co.uk/cameras/mirrorless-cameras/" class="btn btn--red btn--sm">Find out more here</a>
-
-  - title: Clothing from Cotswold Outdoor
-    description: >
-      <p>Head into the wilds of Snowdonia with kit from Cotswold Outdoor. You and a lucky someone will be supplied with  jackets, trekking poles and rucksacks to ensure you’re fully prepared for the challenges that this spellbinding landscape offers. Explore craggy peaks and inspired valleys, for an active getaway in this captivating region. </p>
-      <a id="tracking-btn-cotswoldoutdoor-prize" href="https://www.cotswoldoutdoor.com/new-season.html?utm_source=Secret%20Escapes%20Cymru%20Wales&utm_medium=Webpage&utm_campaign=Secret%20Escapes&utm_term=Autumn&utm_content=Competition" class="btn btn--red btn--sm">Explore the Autumn range</a>
+footer-message: © Crown copyright (<span class="js-year">2018</span>) Visit Wales
 
 ---
 
-
-
-<div class="section">
-  <div class="row row--padding row--xl text--center">
-    {{page.intro}}
+<div class="bg--dark">
+  <div class="container container--xl text--center text--lg vpad--xxl">
+    <p>{{page.intro}}</p>
   </div>
 </div>
 
+<div class="container vpad--xxl">
+  <h2 class="title title--lg text--center">Choose your prize</h2>
+  <div class="space--lg"></div>
+  <div class="row row--xl-6-6 row--gutters-xl">
+    {% for prize in page.prizes %}
+      <div class="col text--center">
+        <div class="bg-img bg-img--3-2 prize-number__offset" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/01.jpg');">
+          <div class="prize-number">{{forloop.index}}</div>
+        </div>
+        <div class="row row--constant-6-6 row--no-gutters">
+          <div class="col">
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/02.jpg');"></div>
+          </div>
+          <div class="col">
+            <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/competition/{{prize.id}}/03.jpg');">
+              {% if prize.id == "lake" %}<div class="bg-img__credit bg-img__credit--sm">© Crown copyright (<span class="js-year">2018</span>) Visit Wales</div>{% endif %}
+            </div>
+          </div>
+        </div>
 
+        <div class="space--lg"></div>
+        <h2 class="sub-title sub-title--lg">{{prize.title}}</h2>
+        <div class="space--xxs"></div>
+        <div class="sub-title sub-title--sm">{{prize.hotel}}</div>
+        <div class="space--xxs"></div>
+        {% for description in prize.content-rows %}
+          <p>{{description.content}}</p>
+        {% endfor %}
 
-<div class="row--100 row--4-4-4-nobp">
-  <a href="#competition" class="col bg-img bg-img--3-4 bg-img--lg-1-1 bg-img--xxl-16-9" style="background-image: url({{site.baseurl}}/img/content/competition/gallery-1.jpg);"></a>
-  <a href="#competition" class="col bg-img bg-img--3-4 bg-img--lg-1-1 bg-img--xxl-16-9" style="background-image: url({{site.baseurl}}/img/content/competition/gallery-2.jpg);"></a>
-  <a href="#competition" class="col bg-img bg-img--3-4 bg-img--lg-1-1 bg-img--xxl-16-9" style="background-image: url({{site.baseurl}}/img/content/competition/gallery-3.jpg);"></a>
-</div>
-
-
-
-<div class="section bg--grey">
-  <div class="row row--padding">
-
-    {% for prize in page.prize %}
-    <div class="bob">
-      <div class="bob__image">
-        <a href="#competition"><div class="bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/competition/{{prize.title|slugify}}.jpg');"></div></a>
       </div>
-      <div class="bob__text">
-        <div class="title title--banner title--md">{{prize.title}}</div>
-        {{prize.description}}
-      </div>
-    </div>
     {% endfor %}
-
   </div>
 </div>
 
-
-
-<div id="competition" class="section vpad--xxl">
-  <div class="row row--padding">
-    <div class="row row--xl text--center">
-      <h2 class="title title--02 title--xs">This enviable hotel prize has been brought to you by our partner Visit Wales. Submit your details below to be entered into the draw. Good luck!</h2>
-    </div>
-    <div class="row">
-      <iframe src="https://promotion4059.strutta.me" width="100%" height="560"> </iframe>
-    </div>
+<div id="entry-form" class="bg--dark vpad--xxl">
+  <div class="container container--xxl text--center">
+    <h3 class="title title--md">Enter below for your chance to win</h3>
+    <div class="space--lg"></div>
+    <iframe src="https://promotion4676.strutta.me" width="100%" height="820"></iframe>
   </div>
 </div>

@@ -1,78 +1,39 @@
 ---
-layout: standard
+layout: default
 id: overview
-title: Overview
+nav: true
 nav-order: 1
-
-
+title: Overview
+intro: Picture yourself in Beaumaris, walking the beach as the sun starts to sink and the waves crash, ready to hole yourself away in a cosy seafront pub. Picture yourself gliding into the middle of Lake Bala on a canoe, the peaks of Snowdonia rising in the distance. Discover the year of the sea in Wales, where mountain rivers feed shimmering lakes and romantic estuaries, where waters spill past grand castles, through pretty harbours and into the sea. Explore dramatic coastal parks like Pembrokeshire, fuel your adrenaline cravings with action-packed adventures, or simply stand in awe at the sublime beauty of the Welsh waterways.
 
 banner:
-  content: >
-    <h1 class="title title--banner title--banner-size">Wales</h1>
-    <div class="title title--02 title--md">Discover a land of legends this autumn</div>
-
-
-
-intro: >
-  <p class="text--lg">Wales is the stuff of legends.</p>
-  <p class="text--lg">Craggy peaks and wild weather, ruined castles clinging to precarious summits, folk tales and new writers – Wales is a landscape of drama, irresistible romance, and superlative escapes. Autumn provides a colourful backdrop to your outdoor adventures, framed by shades of copper and maroon, inviting wistful walks and time spent in cosy rural pubs. New perspectives are waiting to be discovered, in a country constantly reinventing coveted classics. Seek out foodie treats, tear down steep slopes on a mountainbike, or unpick a rugged coastline of ravishing beauty. Meet the people of Wales that make all of this possible, the everyday heroes that ensure each traveller leaves itching to return to this unforgettable land.</p>
-  <p class="text--lg">Start your Wales wanderlust this autumn, here.</p>
-
-
-
-topics:
-
-  - title: Epic Experiences
-    image-credit: © Crown copyright (2016) Visit Wales
-    description: From the Black Mountains to the wilds of Snowdonia, Wales offers nothing short of breathtaking landscapes. Intrepid adventurers will delight in hurtling down crags on mountain bikes, diving off sheer cliffs into bitterly cold ocean, climbing steep slopes for stunning panorama, or ziplining across sublime Welsh valleys. Your adrenaline rush starts here.
-    link: 'a-new-perspective'
-    link-text: Discover More
-
-  - title: A Welsh Craft
-    image-credit: © Crown copyright (2016) Visit Wales
-    description: Schoolboys crafting superlative chocolate, renowned chefs reinventing the possibilities of the Welsh larder, a Brad and a Gazz making renowned craft beer – the Welsh sure know how to push the boundaries of fine fare. It’s long made Wales a world-class foodie destination – discover your own delectable delicacies here.
-    link: 'a-new-perspective'
-    link-text: Discover More
-
-  - title: Tall Tales
-    description: From King Arthur to Under Milk Wood, Wales is teeming with whispers of stoic knights and tight-knit valley communities. A rugged landscape that has inspired fantasies and dramas, romances and epics, and a literary heritage that stretches back to the time of Llywelyn the Great, all culminate in a contemporary Wales that is alive with a fiercely enigmatic cultural landscape.
-    link: 'legends'
-    link-text: Discover More
+  title: Wales
+  title-sub: Discover epic shores and rich inland waterways
 
 ---
 
-<div class="section">
-  <div class="row row--padding row--xl text--center">
-    {{page.intro}}
+<div class="bg--dark vpad--xxl">
+  <div class="container container--xl text--center">
+    <p>{{page.intro}}</p>
+    <p>Whether you’re destined for the coast or want to explore Wales’ beautiful interior, unpick the country through the waterways and coastlines that offer up stunning scenes for unforgettable breaks.</p>
   </div>
 </div>
 
-<div class="section bg--grey">
-  <div class="row row--padding">
-    {% assign page-topics = page.topics %}
-    {% for topic in page-topics %}
-      <div class="bob">
-
-        <div class="bob__image">
-          <a href="{{site.baseurl}}/{{topic.link}}">
-            <div class="bg-img bg-img--4-3 bg-img--rounded" style="background-image: url('{{site.baseurl}}/img/content/overview/{{topic.title|slugify}}.jpg');">
-              {% if topic.image-credit %}
-              <div class="bg-img__credit">
-                {{topic.image-credit}}
-              </div>
-              {% endif %}
-            </div>
-          </a>
+<div class="container vpad--xxxl">
+  {% assign content-pages = site.html_pages | where: 'content-pages', 'true' | sort: 'nav-order' %}
+  {% for page in content-pages %}
+    <div class="bob{% cycle '', ' bob--swap' %}">
+      <div class="bob__img">
+        <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/overview-nav.jpg');">
+          <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
         </div>
-
-        <div class="bob__text line-length--lg">
-          <div class="title title--01 title--lg title--italic title--bolder">{{topic.title}}</div>
-          <p class="text--lg">{{topic.description}}</p>
-          <a href="{{site.baseurl}}/{{topic.link}}" class="btn btn--red">{{topic.link-text}}</a>
-        </div>
-
       </div>
-    {% endfor %}
-  </div>
-  <div class="space--lg"></div>
+      <div class="bob__text">
+        <h2 class="title title--xl">{{page.title}}</h2>
+        <p class="text--lg">{{page.intro}}</p>
+        <div class="space--sm"></div>
+        <a href="{{site.baseurl}}{{page.url}}" class="btn btn--red">Discover More</a>
+      </div>
+    </div>
+  {% endfor %}
 </div>

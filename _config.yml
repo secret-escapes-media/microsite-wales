@@ -2,17 +2,23 @@
 title: Wales
 client:
   name: Visit Wales
-  link: http://www.visitwales.com/?utm_source=secret-escapes&utm_medium=email&utm_campaign=yl47
+  link: http://www.visitwales.com/
+core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  Wales is the stuff of legends. Craggy peaks and wild weather, ruined castles clinging to precarious summits, folk tales and new writers – Wales is a landscape of drama, irresistible romance, and superlative escapes.
+  Discover the year of the sea in Wales, where mountain rivers feed shimmering lakes and romantic estuaries, where waters spill past grand castles, through pretty harbours and into the sea. Explore dramatic coastal parks like Pembrokeshire, fuel your adrenaline cravings with action-packed adventures, or simply stand in awe at the sublime beauty of the Welsh waterways.
+
+# file paths
+url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
 baseurl: "/wales" # the subpath of your site, e.g. /blog/
-url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
+img:     "/wales/_assets/img"
+css:     "/wales/_assets/css"
+js:      "/wales/_assets/js"
 
 
 # Build settings
 markdown: kramdown
 exclude: [node_modules, gulpfile.js, package.json, package-lock.json, js/script.js]
-keep_files: [js/scripts.min.js]
+keep_files: [_assets]
 sass:
     sass_dir: css
     style: compressed
