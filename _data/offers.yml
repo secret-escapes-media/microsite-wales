@@ -1,14 +1,3 @@
-
-- title: Ruthin Castle Hotel & Spa
-  id: ruthin-castle-hotel-spa
-  location: Ruthin, North Wales
-  description: A centuries-old castle with AA Rosette dining in North Wales
-  price: 99
-  price-description: per room per night
-  saved: 42
-  expires: 2018/04/18
-  link: https://www.secretescapes.com/ruthin-castle-hotel-and-spa-ruthin-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
-
 - title: Newbridge on Usk
   id: newbridge-on-usk
   location: Tredunnock, Wales
