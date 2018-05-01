@@ -5,8 +5,8 @@
   // custom content headline
   font-family: $font-title-01;
   font-weight: 700;
-  font-style: italic;
   line-height: 1.1;
+  font-style: italic;
   @include font-smoothing;
 
   &--xxxxl  { font-size: $s9; }
@@ -37,9 +37,9 @@
 .sub-title {
 
   // custom content headline
-  font-family: $font-title-02;
+  font-family: $font-title-01;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.45;
   @include font-smoothing;
 
   font-size: $s2;
@@ -103,9 +103,8 @@
 
   // custom banner headline
   font-family: $font-title-01;
-  font-weight: 900;
-  font-style: italic;
-  font-size: $s14;
+  font-weight: 700;
+  font-size: $s13;
   line-height: 1;
   @include font-smoothing;
 
@@ -113,7 +112,6 @@
   @include bp($sm){ font-size: $s11; }
   @include bp($md){ font-size: $s12; }
   @include bp($lg){ font-size: $s13; }
-  @include bp($xl){ font-size: $s14; }
 
   &--sm {
     font-size: $s6;

@@ -1,29 +1,59 @@
-- title: Lake Country House Hotel & Spa
-  id: lake-country-house-hotel-spa
-  location: Powys, Wales
-  description: A suite stay at an award-winning Welsh country hotel in Powys
-  price: 179
+- title: Newbridge on Usk
+  id: newbridge-on-usk
+  location: Tredunnock, Wales
+  description: 5* boutique restaurant with rooms overlooking the Usk River
+  price: 129
   price-description: per room per night
-  saved: 51
-  expires: 2018/04/14
-  link: https://www.secretescapes.com/lake-country-house-hotel-and-spa-powys-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
+  saved: 32
+  expires: 2018/05/01
+  link: https://www.secretescapes.com/newbridge-on-usk-tredunnock-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
-- title: Ruthin Castle Hotel & Spa
-  id: ruthin-castle-hotel-spa
-  location: Ruthin, North Wales
-  description: A centuries-old castle with AA Rosette dining in North Wales
+- title: The Quay Hotel & Spa
+  id: the-quay-hotel-spa
+  location: Conwy, North Wales
+  description: A stylish spa hotel with AA Rosette dining in North Wales
   price: 99
   price-description: per room per night
-  saved: 42
-  expires: 2018/04/18
-  link: https://www.secretescapes.com/ruthin-castle-hotel-and-spa-ruthin-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
+  saved: 48
+  expires: 2018/05/01
+  link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
-- title: Hallmark Hotel Wrexham Llyndir Hall near Chester
-  id: hallmark-hotel-wrexham-llyndir-hall-near-chester
-  location: Rossett near Chester and Wrexham, Wales
-  description: A Welsh country hotel near Chester and Wrexham
-  price: 79
+- title: Palé Hall
+  id: pale-hall
+  location: Gwynedd, North Wales
+  description: A five-star Welsh mansion with three AA Rosette dining
+  price: 165
   price-description: per room per night
-  saved: 47
-  expires: 2018/04/18
-  link: https://www.secretescapes.com/hallmark-hotel-llyndir-hall-rossett-near-chester-and-wrexham-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
+  saved: 40
+  expires: 2018/05/01
+  link: https://www.secretescapes.com/pale-hall-gwynedd-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
+
+- title: The Brown's
+  id: the-brown-s
+  location: Carmarthenshire, Wales
+  description: A relaxing, boutique stay at an 18th-century bar turned guesthouse in the Welsh town of Laugharne, including breakfast
+  price: 64
+  price-description: per room per night
+  saved: 54
+  expires: 2018/05/04
+  link: https://www.secretescapes.com/the-browns-carmarthenshire-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
+
+- title: Tyddyn Llan
+  id: tyddyn-llan
+  location: Denbighshire, Wales
+  description: An elegant and highly recommended stay in rural North Wales, with breakfast, a Michelin-starred tasting menu dinner, and lovely extras
+  price: 195
+  price-description: per room per night
+  saved: 49
+  expires: 2018/05/09
+  link: https://www.secretescapes.com/tyddyn-llan-denbighshire-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
+
+- title: King's Head Inn
+  id: king-s-head-inn
+  location: Gower, Wales
+  description: A 17th-century stone inn close to Llangennith beach on the beautiful Gower Peninsula - includes breakfast and late check-out
+  price: 75
+  price-description: per room per night
+  saved: 56
+  expires: 2018/05/09
+  link: https://www.secretescapes.com/kings-head-inn-gower-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
