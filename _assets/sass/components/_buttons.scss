@@ -40,7 +40,7 @@
     }
   }
   &--outline-red {
-    &:before { border-color: $white; }
+    &:before { border-color: $w-red; }
     &:hover {
       background-color: $w-red;
       &:before { border-color: $w-red; }

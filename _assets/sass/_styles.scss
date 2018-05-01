@@ -30,3 +30,67 @@ $prize-number-size: 60px;
     &__offset { margin-top: ($prize-number-size/2); }
   }
 }
+
+
+.blog {
+  &__content {
+    p { overflow: auto; }
+    p + p { margin-top: $s0; }
+  }
+  &__image {
+    width: 100%;
+    max-width: 48%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    &--left { float: left; }
+    &--right { float: right; }
+  }
+
+}
+
+.width {
+  margin-right: auto;
+  margin-left: auto;
+  &--sm { max-width: $sm; }
+  &--md { max-width: $md; }
+  &--lg { max-width: $lg; }
+  &--xl { max-width: $xl; }
+  &--xxl { max-width: $xxl; }
+}
+
+.author {
+  max-width: $lg;
+  padding: $s2;
+  background-color: rgba($grey-darker,.8);
+  text-align: center;
+  @include bp($md){
+    display: flex;
+    align-items: center;
+  }
+  &__image {
+    $image-size: 80px;
+    float: left;
+    width: $image-size;
+    margin-right: $s0;
+    border-radius: $image-size;
+    overflow: hidden;
+    @include bp($md){
+      float: none;
+      flex-shrink: 0;
+    }
+  }
+  &__description {
+    font-size: .878rem;
+    text-align: left;
+  }
+
+}
+
+.blog {
+  &__bg {
+    background-image: url('../img/content/blog/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1920px 1000px;
+  }
+}
