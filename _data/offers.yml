@@ -5,7 +5,7 @@
   price: 129
   price-description: per room per night
   saved: 32
-  expires: 2018/05/01
+  expires: 2018/05/10
   link: https://www.secretescapes.com/newbridge-on-usk-tredunnock-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
 - title: The Quay Hotel & Spa
@@ -15,7 +15,7 @@
   price: 99
   price-description: per room per night
   saved: 48
-  expires: 2018/05/01
+  expires: 2018/05/10
   link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
 - title: Palé Hall
@@ -25,18 +25,8 @@
   price: 165
   price-description: per room per night
   saved: 40
-  expires: 2018/05/01
+  expires: 2018/05/11
   link: https://www.secretescapes.com/pale-hall-gwynedd-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
-
-- title: The Brown's
-  id: the-brown-s
-  location: Carmarthenshire, Wales
-  description: A relaxing, boutique stay at an 18th-century bar turned guesthouse in the Welsh town of Laugharne, including breakfast
-  price: 64
-  price-description: per room per night
-  saved: 54
-  expires: 2018/05/04
-  link: https://www.secretescapes.com/the-browns-carmarthenshire-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
 - title: Tyddyn Llan
   id: tyddyn-llan
@@ -52,8 +42,18 @@
   id: king-s-head-inn
   location: Gower, Wales
   description: A 17th-century stone inn close to Llangennith beach on the beautiful Gower Peninsula - includes breakfast and late check-out
-  price: 75
+  price: 65
   price-description: per room per night
   saved: 56
   expires: 2018/05/09
   link: https://www.secretescapes.com/kings-head-inn-gower-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
+
+- title: Grove of Narberth
+  id: grove-of-narberth
+  location: Pembrokeshire, Wales
+  description: A luxurious boutique retreat in rural Wales, with a triple AA Rosette-awarded restaurant – includes breakfast
+  price: 149
+  price-description: per room per night
+  saved: 53
+  expires: 2018/05/16
+  link: https://www.secretescapes.com/grove-of-narberth-pembrokeshire-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_May2018
