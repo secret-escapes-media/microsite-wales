@@ -5,7 +5,7 @@
   price: 129
   price-description: per room per night
   saved: 32
-  expires: 2018/05/10
+  expires: 2018/05/16
   link: https://www.secretescapes.com/newbridge-on-usk-tredunnock-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
 - title: The Quay Hotel & Spa
@@ -15,7 +15,7 @@
   price: 99
   price-description: per room per night
   saved: 48
-  expires: 2018/05/10
+  expires: 2018/05/16
   link: https://www.secretescapes.com/the-quay-hotel-and-spa-conwy-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
 - title: Palé Hall
@@ -25,7 +25,7 @@
   price: 165
   price-description: per room per night
   saved: 40
-  expires: 2018/05/11
+  expires: 2018/05/16
   link: https://www.secretescapes.com/pale-hall-gwynedd-north-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
 - title: Tyddyn Llan
@@ -35,18 +35,8 @@
   price: 195
   price-description: per room per night
   saved: 49
-  expires: 2018/05/09
+  expires: 2018/05/16
   link: https://www.secretescapes.com/tyddyn-llan-denbighshire-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
-
-- title: King's Head Inn
-  id: king-s-head-inn
-  location: Gower, Wales
-  description: A 17th-century stone inn close to Llangennith beach on the beautiful Gower Peninsula - includes breakfast and late check-out
-  price: 65
-  price-description: per room per night
-  saved: 56
-  expires: 2018/05/09
-  link: https://www.secretescapes.com/kings-head-inn-gower-wales/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Wales_April2018
 
 - title: Grove of Narberth
   id: grove-of-narberth
